@@ -1,8 +1,64 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin-left: 5px solid;
     font-family: Arial;
+    background-color:#F7EDE4;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+table{
+    padding: 25;
+    background-color: #261E1E;
+}
+.questionario{
+    background-color: #F7EDE4;
+
 }
 .titulo{
-    font-size:10px ;
+    font-size:10px;
+
+
 }
+
+.mesclar{
+    text-align: center;
+}
+
+.inputInfo{
+    width: 300px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 50px;
+    border-color: #EBC697;
+    background-color: #F9DFC7;
+    border-style:double;
+    color: #261E1E;
+
+}
+
+.inputNumero{
+    width: 100px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 50px;
+    border-color: #EBC697;
+    background-color: #F9DFC7;
+    border-style:double;
+    color: #261E1E;
+}
+
+.inputInfoExtra{
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+    border-radius:50px;
+    border-color: #EBC697;
+    background-color: #F9DFC7;
+    border-style:double;
+    color: #261E1E;
+}
+
+
+

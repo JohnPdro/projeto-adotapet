@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,109 @@
     <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
 </head>
+
 <body>
     <form action="#" method="post">
-        <h1 class="titulo">INFORMAÇÕES DO SEU PET</h1>
-            <div class="selecaoAnimal">
-                <img src="imagens/silhouetteCachorro.webp" alt="Cachorro">
-                <img src="imagens/silhouetteGato.png" alt="Gato">
+        <div>
+        <table bgcolor="#261E1E" border="1px">
+            <tr>
+                <th colspan="2">
+                    <h1 class="titulo">INFORMAÇÕES DO SEU PET</h1>
+                </th>
+            </tr>
+            
+            <tr>
+                <td>
+                    <div class="selecaoAnimal">
+                        <img width="100" src="imagens/silhouetteCachorro.webp" alt="Cachorro"><br>
+                        <input class="checbox" type="checkbox" name="dog">
+                    </div>
+                </td>
+                <td>
+                    <div class="selecaoAnimal">
+                        <img width="100" src="imagens/silhouetteGato.png" alt="Gato"><br>
+                        <input type="checkbox" name="cat">
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+
+            <div class="perguntas">
+                <tr>
+                    <td class="mesclar">
+                        <label for="nome">Nome: </label>
+                    </td>
+                    <td>
+                        <input class="inputInfo" name="nome">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mesclar">
+                        <label for="idade">Idade: </label>
+                    </td>
+                    <td>
+                        <input class="inputNumero" name="idade">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mesclar">
+                        <label for="raca">Raça: </label>
+                    </td>
+                    <td>
+                        <input class="inputInfo" name="raca">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="mesclar">
+                        <label for="porte">Tamanho: </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="porte">Pequeno</label>
+                        <input class="inputNumero" type="checkbox" name="port">
+                        <label for="porte">Médio</label>
+                        <input class="inputNumero" type="checkbox" name="port">
+                        <label for="porte">Grande</label>
+                        <input class="inputNumero" type="checkbox" name="port">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mesclar">
+                        <label for="cor">Cor: </label>
+                    </td>
+                    <td>
+                        <input class="inputInfo" name="cor">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="mesclar">
+                        <label for="localizacao">Localização: </label>
+                    </td>
+                    <td>
+                        <input class="inputInfo" name="localizacao">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="mesclar">
+                        <label for="sobre">Conte um pouco sobre seu pet: </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mesclar" colspan="2">
+                        <input class="inputInfoExtra" name="sobre">
+                    </td>
+                </tr>
             </div>
-            <p>
-                <label for="nome">Nome: </label>
-                <input class="input1" name="nome" required placeholder="Nome e Sobrenome"> 
-            </p>
-    
-            <p>
-                <label for="idade">Idade: </label>
-                <input class="input1"  name="idade"  placeholder="Idade aproximada do animal"required maxlength="6"> 
-            </p>
-    
-            <p>
-                <label for="raca">Raça: </label>
-                <input class="input1" name="raca">
-            </p>  
-
-            <p>
-                <label for="peso">Peso: </label>
-                <input class="input1" name="peso">
-            </p> 
-
-            <p>
-                <label for="cor">Cor: </label>
-                <input class="input1" name="cor">
-            </p>
-
-            <p>
-                <label for="localizacao">Localização: </label>
-                <input class="input1" name="localizacao">
-            </p>
-
-            <p>
-                <label for="sobre">Fale sobre o pet:</label>
-                <input class="input1" name="sobre">
-            </p>
+            </div>
+        </table>
     </form>
 
 </body>
+
 </html>
