@@ -1,36 +1,43 @@
-* {
-    margin-left: 5px solid;
-    font-family: Arial;
-    background-color:#F7EDE4;
+ html{
+    background: url("imagens/AdotaPetFundo.png");   
+ }
+ body{
+    margin-top: 30px;
     font-family: Arial;
     text-transform: uppercase;
     font-weight: lighter;
 
 }
 
-table{
-    padding: 25;
-    background-color: #261E1E;
-}
-.questionario{
-    background-color: #F7EDE4;
 
+table{
+    background: linear-gradient(45deg, #F7EDE4, #F9DFC7);
+    box-shadow: 0px 10px 13px -7px #000000, 16px 19px 22px 9px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    
+    
 }
+
 .titulo{
     font-size:10px;
-
-
 }
 
 .mesclar{
     text-align: center;
 }
 
+.selecaoAnimal{
+    justify-content:center;
+    display: flex;
+
+    
+}
+
 .inputInfo{
     width: 300px;
     height: 25px;
     margin: 5px;
-    border-radius: 50px;
+    border-radius: 13px;
     border-color: #EBC697;
     background-color: #F9DFC7;
     border-style:double;
@@ -42,7 +49,7 @@ table{
     width: 100px;
     height: 25px;
     margin: 5px;
-    border-radius: 50px;
+    border-radius: 13px;
     border-color: #EBC697;
     background-color: #F9DFC7;
     border-style:double;
@@ -53,12 +60,15 @@ table{
     width: 300px;
     height: 100px;
     margin: 5px;
-    border-radius:50px;
+    border-radius:13px;
     border-color: #EBC697;
     background-color: #F9DFC7;
     border-style:double;
     color: #261E1E;
 }
 
-
+.container{
+    display: flex;
+    justify-content: center;
+}
 
