@@ -1,15 +1,10 @@
-@font-face {
-    font-family:lillita;
-    src: url('LilitaOne-Regular.ttf') format(truetype);
-}
 
 html{
-    background: url("imagens/AdotaPetFundo.png");
-    font-family: lill;
- }
+    background: url("imagens/FundoPageAdotaPet.png");
+}
  body{
     margin-top: 30px;
-    font-family: Arial;
+    font-family: 'Lilita One', cursiva;
     text-transform: uppercase;
     font-weight: lighter;
 
