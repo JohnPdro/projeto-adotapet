@@ -20,25 +20,18 @@
             
             <tr>
                 <td>
-                    
-                    <div class="selecaoAnimal">
+                    <div class="selecaoAnimal" name="dog">
                         <img width="100" src="imagens/silhouetteCachorro.webp" alt="Cachorro"><br>
+                        <input class="checbox" type="checkbox" name="dog">
                     </div>
                 </td>
                 <td>
-                    <input class="checbox" type="checkbox" name="dog">
-                </td>
-                <td>
-                    <div class="selecaoAnimal">
+                    <div class="selecaoAnimal" name="cat">
                         <img width="100" src="imagens/silhouetteGato.png" alt="Gato"><br>
                         <input type="checkbox" name="cat">
                     </div>
                 </td>
             </tr>
-
-
-
-
 
             <div class="perguntas">
                 <tr>
@@ -67,18 +60,19 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="mesclar">
-                        <label for="porte">Tamanho: </label>
+                        <label  for="porte">Tamanho: </label>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for="porte">Pequeno</label>
-                        <input class="inputNumero" type="checkbox" name="port">
-                        <label for="porte">Médio</label>
-                        <input class="inputNumero" type="checkbox" name="port">
-                        <label for="porte">Grande</label>
-                        <input class="inputNumero" type="checkbox" name="port">
-                        
+                        <div class="checkbox">
+                            <label for="porte">Pequeno</label>
+                            <input  type="checkbox" name="port">
+                            <label for="porte">Médio</label>
+                            <input  type="checkbox" name="port">
+                            <label for="porte">Grande</label>
+                            <input  type="checkbox" name="port">
+                        </div>
                     </td>
                 </tr>
                 <tr>
