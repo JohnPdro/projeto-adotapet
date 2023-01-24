@@ -1,0 +1,44 @@
+  *{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}  
+.logo{
+    width: 400px;
+    background-color: bisque ;
+}
+.fundo-logo{
+    background-color: bisque ;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    display: flex;
+    align-items: right;
+    margin-left: 700px;
+    margin-top: -50px;
+
+}
+.marq{
+    background-color: blanchedalmond;
+    padding: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+ul,a:hover{
+    cursor: pointer;
+    color:burlywood;
+    transition: 200ms;
+}
+.container{
+    position: relative;
+    padding: 100px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-between;   
+}
