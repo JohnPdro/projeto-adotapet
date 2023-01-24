@@ -3,8 +3,8 @@ html{
     background: url("imagens/FundoPageAdotaPet.png");
 }
  body{
-    margin-top: 30px;
-    font-family: 'Lilita One', cursiva;
+    margin-top: 66px;
+    font-family: 'Lilita One', cursive;
     text-transform: uppercase;
     font-weight: lighter;
 
@@ -12,17 +12,17 @@ html{
 
 
 table{
-    height: 600px;
-    padding: 25px;
+    height: 500px;
+    padding: 20px;
     background: linear-gradient(to bottom right, #e9cdb5, #F7EDE4);
     box-shadow: 0px 10px 13px -7px #261E1E, 16px 19px 22px 9px rgba(0,0,0,0.23);
     border-radius: 20px;
 }
 
-.checkbox{
-    text-align: center;
-    margin: 5px;
+tr{
+    margin: 30px;
 }
+
 
 .titulo{
     font-size:10px;
@@ -31,11 +31,6 @@ table{
 .mesclar{
     text-align: center;
     
-}
-
-.selecaoAnimal{
-    justify-content:center;
-    display: flex;
 }
 
 .inputInfo{
@@ -80,3 +75,22 @@ table{
     justify-content: center;
 }
 
+.celula-imagens{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.celula-imagens img{
+    display: block;
+}
+
+.selecaoAnimal{
+    text-align: center;
+}
+
+.tamanhoAnimal{
+    text-align: center;
+}
