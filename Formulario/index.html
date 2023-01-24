@@ -6,113 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Lilita +One & display=swap" rel="stylesheet">
     <title>Formulário</title>
 </head>
 
 <body>
     <div class="container">
-    <form action="#" method="post">
-        <div>
-        <table>
-            <tr>
-                <th colspan="2">INFORMAÇÕES DO SEU PET</th>
-            </tr>
-            
-            <tr>
-                <td>
-                    
-                    <div class="selecaoAnimal">
-                        <img width="100" src="imagens/silhouetteCachorro.webp" alt="Cachorro"><br>
+        <form action="#" method="post">
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="2">INFORMAÇÕES DO SEU PET</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="selecaoAnimal" name="dog">
+                                <img width="100" src="imagens/silhouetteCachorro.webp" alt="Cachorro"><br>
+                                <input class="checbox" type="checkbox" name="dog">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="selecaoAnimal" name="cat">
+                                <img width="100" src="imagens/silhouetteGato.png" alt="Gato"><br>
+                                <input type="checkbox" name="cat">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <div class="perguntas">
+                        <tr>
+                            <td class="mesclar">
+                                <label for="nome">Nome: </label>
+                            </td>
+                            <td>
+                                <input class="inputInfo" name="nome">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mesclar">
+                                <label for="idade">Idade: </label>
+                            </td>
+                            <td>
+                                <input class="inputNumero" name="idade">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mesclar">
+                                <label for="raca">Raça: </label>
+                            </td>
+                            <td>
+                                <input class="inputInfo" name="raca">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="mesclar">
+                                <label for="porte">Tamanho: </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="checkbox">
+                                    <label for="porte">Pequeno</label>
+                                    <input type="checkbox" name="port">
+                                    <label for="porte">Médio</label>
+                                    <input type="checkbox" name="port">
+                                    <label for="porte">Grande</label>
+                                    <input type="checkbox" name="port">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mesclar">
+                                <label for="cor">Cor: </label>
+                            </td>
+                            <td>
+                                <input class="inputInfo" name="cor">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="mesclar">
+                                <label for="localizacao">Localização: </label>
+                            </td>
+                            <td>
+                                <input class="inputInfo" name="localizacao">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="mesclar">
+                                <label for="sobre">Conte um pouco sobre seu pet: </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mesclar" colspan="2">
+                                <input class="inputInfoExtra" name="sobre">
+                            </td>
+                        </tr>
                     </div>
-                </td>
-                <td>
-                    <input class="checbox" type="checkbox" name="dog">
-                </td>
-                <td>
-                    <div class="selecaoAnimal">
-                        <img width="100" src="imagens/silhouetteGato.png" alt="Gato"><br>
-                        <input type="checkbox" name="cat">
-                    </div>
-                </td>
-            </tr>
-
-
-
-
-
-            <div class="perguntas">
-                <tr>
-                    <td class="mesclar">
-                        <label for="nome">Nome: </label>
-                    </td>
-                    <td>
-                        <input class="inputInfo" name="nome">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mesclar">
-                        <label for="idade">Idade: </label>
-                    </td>
-                    <td>
-                        <input class="inputNumero" name="idade">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mesclar">
-                        <label for="raca">Raça: </label>
-                    </td>
-                    <td>
-                        <input class="inputInfo" name="raca">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="mesclar">
-                        <label for="porte">Tamanho: </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <label for="porte">Pequeno</label>
-                        <input class="inputNumero" type="checkbox" name="port">
-                        <label for="porte">Médio</label>
-                        <input class="inputNumero" type="checkbox" name="port">
-                        <label for="porte">Grande</label>
-                        <input class="inputNumero" type="checkbox" name="port">
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mesclar">
-                        <label for="cor">Cor: </label>
-                    </td>
-                    <td>
-                        <input class="inputInfo" name="cor">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mesclar">
-                        <label for="localizacao">Localização: </label>
-                    </td>
-                    <td>
-                        <input class="inputInfo" name="localizacao">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="mesclar">
-                        <label for="sobre">Conte um pouco sobre seu pet: </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="mesclar" colspan="2">
-                        <input class="inputInfoExtra" name="sobre">
-                    </td>
-                </tr>
             </div>
-            </div>
-        </table>
-    </form>
-</div>
+            </table>
+        </form>
+    </div>
 </body>
 
 </html>

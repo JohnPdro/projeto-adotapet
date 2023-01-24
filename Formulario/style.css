@@ -1,9 +1,10 @@
- html{
-    background: url("imagens/AdotaPetFundo.png");   
- }
+
+html{
+    background: url("imagens/FundoPageAdotaPet.png");
+}
  body{
     margin-top: 30px;
-    font-family: Arial;
+    font-family: 'Lilita One', cursiva;
     text-transform: uppercase;
     font-weight: lighter;
 
@@ -11,11 +12,16 @@
 
 
 table{
-    background: linear-gradient(45deg, #F7EDE4, #F9DFC7);
-    box-shadow: 0px 10px 13px -7px #000000, 16px 19px 22px 9px rgba(0,0,0,0.23);
+    height: 600px;
+    padding: 25px;
+    background: linear-gradient(to bottom right, #e9cdb5, #F7EDE4);
+    box-shadow: 0px 10px 13px -7px #261E1E, 16px 19px 22px 9px rgba(0,0,0,0.23);
     border-radius: 20px;
-    
-    
+}
+
+.checkbox{
+    text-align: center;
+    margin: 5px;
 }
 
 .titulo{
@@ -24,6 +30,7 @@ table{
 
 .mesclar{
     text-align: center;
+    
 }
 
 .selecaoAnimal{
@@ -40,6 +47,7 @@ table{
     background-color: #F9DFC7;
     border-style:double;
     color: #261E1E;
+    box-shadow: 0px 7px 10px -7px #261E1E, 2px 3px 9px 3px rgba(0,0,0,0.23);
 
 }
 
@@ -52,6 +60,7 @@ table{
     background-color: #F9DFC7;
     border-style:double;
     color: #261E1E;
+    box-shadow: 0px 7px 10px -7px #261E1E, 2px 3px 9px 3px rgba(0,0,0,0.23);
 }
 
 .inputInfoExtra{
@@ -63,6 +72,7 @@ table{
     background-color: #F9DFC7;
     border-style:double;
     color: #261E1E;
+    box-shadow: 0px 7px 10px -7px #261E1E, 2px 3px 9px 3px rgba(0,0,0,0.23);
 }
 
 .container{
