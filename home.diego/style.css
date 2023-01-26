@@ -1,15 +1,19 @@
-  *{
+    *{
     padding: 0;
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}  
+} 
+html{
+    background-image: url(img/);
+}   
 .logo{
     width: 400px;
-    background-color: bisque ;
+    /* background-color: bisque ; */
 }
 .fundo-logo{
-    background-color: bisque ;
+    background-color: #fee8dd ;
     width: 100%;
+    /* background-image: url(img/Fundo.png); */
 }
 ul{
     list-style: none;
@@ -22,7 +26,7 @@ ul{
 
 }
 .marq{
-    background-color: blanchedalmond;
+    background-color: #fee8dd;
     padding: 25px;
 }
 a{
@@ -41,4 +45,17 @@ ul,a:hover{
     margin-top: -100px;
     display: flex;
     justify-content: space-between;   
+}
+.doglateral{
+    height: 500px;
+    position: wrap;
+    width: 900px;
+    padding-left: 700px;
+    background-color: #fee8dd;
+}
+.footer{
+    background-color: #fee8dd;
+    padding: 100px;
+    text-align: center;
+    color: black;
 }
