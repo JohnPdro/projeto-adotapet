@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial;
-    
-}
+    box-sizing: border-box;
+} 
+
 
 body{
     background: bisque;
@@ -19,27 +20,46 @@ body{
     width: 460px;
 }
 .container{
+
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
- 
+    justify-content: space-between;
+    background: url("img/background23.png");
+    height: 150px;
 }
-.navegacao-itens{
-    display: inline-flex;
-    padding: 20px ;
-    font-size: 25px;
-    margin-left: 10px;
-    color: white;
-    font-size: larger;
-    font-variant: small-caps;
+ul{
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    padding: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Fredoka eOn', cursive;
 }
- 
-a:hover{
-    color: black;
-    transition: 1s;
- 
+li{
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
+a:hover{
+    transition: 200ms;
+    color: rgb(170, 138, 116);
+}
+body{
+    background-color: #fee8dd;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: url("img/background23.png");
+    text-align: center;
+    height: 60px;
+    font-family: 'Fredoka One', cursive;
+  }

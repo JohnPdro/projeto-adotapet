@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+.cabecalho{
+    height: 200px;
+    background-color: #de985e;
+    border: 2px solid black;
+ 
+}
+.logo-adota{
+    width: 500px;
+    
+}
+.container{
+    display: flex;
+    
+    align-items: center;
+
+ 
+}
+.navegacao-itens{
+    display: inline;
+    font-size: 25px;
+    margin-left: 40px;
+    color: white;
+    justify-content: center;
+    text-align: justify;
+
+}
+ 
+a:hover{
+    color: black;
+    transition: 1s;
+ 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+  body {
+  background-image:url(..//imagens/MicrosoftTeams-image\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+  .teste{
+    
+  }
+
