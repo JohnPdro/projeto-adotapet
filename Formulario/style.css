@@ -1,10 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 html{
     background: url("imagens/FundoPageAdotaPet.png");
 }
  body{
     margin-top: 66px;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Fredoka One', cursive;
     text-transform: uppercase;
     font-weight: lighter;
 
@@ -23,6 +23,15 @@ tr{
     margin: 30px;
 }
 
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  border: 2px solid #cacece;
+}
 
 .titulo{
     font-size:10px;
