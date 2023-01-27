@@ -18,22 +18,22 @@
             <div>
                 <table>
                     <tr>
-                        <th colspan="2">INFORMAÇÕES DO SEU PET</th>
+                        <th colspan="2" class="infoPet">INFORMAÇÕES DO SEU PET</th>
                     </tr>
 
                     <tr>
                         <td colspan="2">
                             <div class="celula-imagens">
-                                <div class="selecaoAnimal" name="dog">
-                                    <label>
-                                        <input type="checkbox" name="dog">
+                                <div class="selecaoAnimal">
+                                    <label class="inputLabel">
+                                        <input type="checkbox" class="tamanhoInput">
                                         <img width="100" src="imagens/silhouetteCachorro.webp" alt="Cachorro">
                                     </label>
                                 </div>
 
-                                <div class="selecaoAnimal" name="cat">
-                                    <label>
-                                        <input type="checkbox" name="cat">
+                                <div class="selecaoAnimal">
+                                    <label class="inputLabel">
+                                        <input type="checkbox" class="tamanhoInput">
                                         <img width="100" src="imagens/silhouetteGato.png" alt="Gato">
                                     </label>
                                 </div>
@@ -44,72 +44,93 @@
 
                     <div class="perguntas">
                         <tr>
-                            <td class="mesclar">
-                                <label for="nome">Nome: </label>
-                            </td>
-                            <td>
-                                <input class="inputInfo" name="nome">
-                            </td>
+                            <div class="">
+                                <td class="mesclar">
+                                    <label>Nome: </label>
+                                </td>
+                                <td>
+                                    <input class="inputInfo">
+                                </td>
+                            </div>
                         </tr>
                         <tr>
-                            <td class="mesclar">
-                                <label for="idade">Idade: </label>
-                            </td>
-                            <td>
-                                <input class="inputNumero" name="idade">
-                            </td>
+                            <div class="">
+                                <td class="mesclar">
+                                    <label>Idade: </label>
+                                </td>
+                                <td>
+                                    <input class="inputNumero">
+                                </td>
+                            </div>
                         </tr>
                         <tr>
-                            <td class="mesclar">
-                                <label for="raca">Raça: </label>
-                            </td>
-                            <td>
-                                <input class="inputInfo" name="raca">
-                            </td>
+                            <div class="">
+                                <td class="mesclar">
+                                    <label>Raça: </label>
+                                </td>
+                                <td>
+                                    <input class="inputInfo">
+                                </td>
+                            </div>
                         </tr>
                         <tr>
+
                             <td colspan="2" class="mesclar">
-                                <label for="porte">Tamanho: </label>
+                                <div class="posicionamentoTexto">
+                                    <label>Tamanho: </label>
+                                </div>
                             </td>
+
                         </tr>
                         <tr>
                             <td colspan="2">
                                 <div class="tamanhoAnimal">
-                                    <label for="porte">Pequeno</label>
-                                    <input type="checkbox" name="port">
-                                    <label for="porte">Médio</label>
-                                    <input type="checkbox" name="port">
-                                    <label for="porte">Grande</label>
-                                    <input type="checkbox" name="port">
+                                    <label class="inputLabel">Pequeno
+                                        <input type="checkbox" class="tamanhoInput">
+                                    </label>
+                                    <label class="inputLabel">Médio
+                                        <input type="checkbox" class="tamanhoInput">
+                                    </label>
+                                    <label class="inputLabel">Grande
+                                        <input type="checkbox" class="tamanhoInput">
+                                    </label>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="mesclar">
-                                <label for="cor">Cor: </label>
-                            </td>
-                            <td>
-                                <input class="inputInfo" name="cor">
-                            </td>
+                            <div class="">
+                                <td class="mesclar">
+                                    <label>Cor: </label>
+                                </td>
+                                <td>
+                                    <input class="inputInfo">
+                                </td>
+                            </div>
                         </tr>
 
                         <tr>
-                            <td class="mesclar">
-                                <label for="localizacao">Localização: </label>
-                            </td>
-                            <td>
-                                <input class="inputInfo" name="localizacao">
-                            </td>
+                            <div class="">
+                                <td class="mesclar">
+                                    <label>Localização: </label>
+                                </td>
+                                <td>
+                                    <input class="inputInfo" name="localizacao">
+                                </td>
+                            </div>
                         </tr>
                         <tr>
-                            <td colspan="2" class="mesclar">
-                                <label for="sobre">Conte um pouco sobre seu pet: </label>
-                            </td>
+                            <div class="">
+                                <td colspan="2" class="mesclar">
+                                    <label>Conte um pouco sobre seu pet: </label>
+                                </td>
+                            </div>
                         </tr>
                         <tr>
-                            <td class="mesclar" colspan="2">
-                                <input class="inputInfoExtra" name="sobre">
-                            </td>
+                            <div class="">
+                                <td class="mesclar" colspan="2">
+                                    <input class="inputInfoExtra">
+                                </td>
+                            </div>
                         </tr>
                     </div>
             </div>
@@ -117,5 +138,6 @@
         </form>
     </div>
 </body>
+<script src="app.js"></script>
 
 </html>
