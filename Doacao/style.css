@@ -1,12 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *{
+    font-family: 'Fredoka One', cursive;
+    color: #261E1E;
     margin: 0;
     padding: 0;
 }
  
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+  background-image:url(..//imagens/MicrosoftTeams-image\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #F7EDE4;
+  }
+
+table{
+    text-align: center;
+    margin: auto;
+    border-top: 0px;
+}
+
 .cabecalho{
     height: 200px;
     background-color: #de985e;
-    border: 2px solid black;
+    border: 2px solid #261E1E;
  
 }
 .logo-adota{
@@ -24,29 +47,55 @@
     display: inline;
     font-size: 25px;
     margin-left: 40px;
-    color: white;
+    color: #F7EDE4;
     justify-content: center;
     text-align: justify;
 
 }
  
 a:hover{
-    color: black;
+    color: #261E1E;
     transition: 1s;
  
 }
-a{
-    text-decoration: none;
-    color: white;
+
+.doe{
+    display: inline;
+    padding: 25px;
 }
-  body {
-  background-image:url(..//imagens/MicrosoftTeams-image\ \(1\).png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  }
 
-  .teste{
-    
-  }
+/* .teste{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background: #de985e;
+    border-radius: 50%;
+} */
 
+
+.posicao{
+    margin-top: 20px;
+}
+
+.textoCima{
+    height: 380px;
+    width: 350px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+        
+}
+
+.textoBaixo{
+  height:90px;  
+  
+  border-bottom: 0px;
+  border-left: 0px; 
+}
+
+.botaoPreco{
+    align-items: center;
+    padding: 25px;
+    background: #de985e ;
+    border-radius: 15%; 
+}
