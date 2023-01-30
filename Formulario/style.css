@@ -43,7 +43,7 @@ input {
 #animacao {
     position: relative;
     top: 0;
-}l
+}
 #animacao:hover {
     top: -4px;
     box-shadow: 10px 10px 5px 0px rgba(168, 97, 30, 1);

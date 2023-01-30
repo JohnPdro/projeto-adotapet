@@ -13,7 +13,7 @@ a{
 }
 
 body{
-  background-image:url(..//imagens/MicrosoftTeams-image\ \(1\).png);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -21,10 +21,34 @@ body{
   }
 
 table{
+    border-color: #261E1E;
+    border-width: 2px;
+    border-radius: 2px;
     text-align: center;
     margin: auto;
     border-top: 0px;
+    border-bottom: none;
+    width: 90%
 }
+
+label{
+    cursor: pointer;
+}
+
+#animacao {
+    position: relative;
+    top: 0;
+}
+#animacao:hover {
+    top: -4px;
+    box-shadow: 10px 10px 5px 0px rgba(168, 97, 30, 1);
+    transition: all .2s ease-in-out;
+}
+
+
+/* .fundoTabela{
+    background-image:url(imagens/planoDeFundoDoacao7.png);
+} */
 
 .cabecalho{
     height: 200px;
@@ -55,7 +79,7 @@ table{
  
 a:hover{
     color: #261E1E;
-    transition: 1s;
+    transition: 0.3s;
  
 }
 
@@ -77,25 +101,52 @@ a:hover{
     margin-top: 20px;
 }
 
-.textoCima{
+.colunaCima{
     height: 380px;
     width: 350px;
-    border-top: 0px;
-    border-bottom: 0px;
-    border-left: 0px;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-color: #261E1E;
+    border-radius: 2px;
+    border-width: 2px;
         
 }
 
-.textoBaixo{
+.colunaBaixo{
   height:90px;  
-  
-  border-bottom: 0px;
-  border-left: 0px; 
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-color: #261E1E;
+  border-radius: 2px;
+  border-width: 2px; 
 }
+
+.colunaBaixo25{
+    height:90px; 
+    border:10px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-color: #261E1E;
+    border-radius: 2px;
+    border-width: 2px;   
+  }
+
+.coluna{
+    background-color: bisque;
+}  
 
 .botaoPreco{
     align-items: center;
     padding: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     background: #de985e ;
-    border-radius: 15%; 
+    border-radius: 10%; 
 }
