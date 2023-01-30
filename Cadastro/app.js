@@ -7,7 +7,7 @@ let validNome = false
 
 // let email = document.querySelector('#email')
 // let labelEmail = document.querySelector('#labelEmail')
-//let validEmail = false
+// let validEmail = false
 
 let senha = document.querySelector('#senha')
 let labelSenha = document.querySelector('#labelSenha')
@@ -36,12 +36,12 @@ nome.addEventListener('keyup', ()=>{
 //     labelEmail.setAttribute('style', 'color: red')
 //     labelEmail.innerHTML = '<strong>Email *Insira um email valido </strong>'
 //     email.setAttribute('style', 'border-color: red')
-//     validNome = false
+//     validEmail = false
 //   } else {
 //     labelEmail.setAttribute('style', 'color: green')
 //     labelEmail.innerHTML = 'Email'
 //     email.setAttribute('style', 'border-color: green')
-//     validNome = true
+//     validEmail = true
 //   }
 // })
 
@@ -74,10 +74,32 @@ ConfirmSenha.addEventListener('keyup', ()=>{
 })
 
 function cadastrar(){
+  let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+  
+  listaUser.push(
+  {
+    nomeCad: nome.value,
+    // emailCad: email.value,
+    senhaCad: senha.value
+  }
+  )
+  
+  localStorage.setItem('listaUser', JSON.stringify(listaUser))
+  
   if(validNome && validSenha && validConfirmSenha){
-    alert('Todos os campos estão corretos!')
+    msgSuccess.setAttribute('style', 'display: block')
+    msgSuccess.innerHTML = '<strong>Cadastrado!</strong>'
+    msgError.setAttribute('style', 'display: none')
+    msgError.innerHTML = ''
+    
+    // setTimeout(()=>{
+    //   window.location.href =
+    // }, 3000)
   } else {
-    alert('Tá tudo vazio!')
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = '<strong>Preencha todos os campos acima!</strong>'
+    msgSuccess.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = ''
   }
 }
 
