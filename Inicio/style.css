@@ -3,20 +3,30 @@
     text-decoration: none;
     margin: 0;
 }
- 
+
 body {
-    background-image: url("imagens/background-laddingpage\ 1.jpg");
+    background-image: url("imagens/background-laddingpage.jpg");
     font-size: 20px;
     font-family: 'Lilita One', cursive;
     padding: 50px;
-    
+    height: 80vh;
 }
- 
+#cabecalho-geral{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo-laddingpage {
-    width: 80%;
+    width: 50%;
+    margin: 3em 0;
 }
- 
-#cabecalho .container-conta{
+#cabecalho{
+    margin: auto;
+}
+
+#cabecalho .container-login{
     display: flex;
     justify-content: flex-end;
 }
@@ -24,16 +34,16 @@ body {
     display: flex;
     justify-content: space-around;
 }
-#cabecalho .container-imagem{
+#cabecalho .container-logo{
     display: flex;
     justify-content: center;
 }
 .botoes{
     color: #F7EDE4;
-    font-size: 50px;
+    font-size: 40px;
     border: 2px solid #261E1E;
     background-color: #261E1E;
-    width: 350px;
+    width: 6em;
     padding: 10px 0;
     border-radius: 2em;
     text-align: center;
@@ -41,48 +51,49 @@ body {
     -moz-box-shadow: 0px 10px 25px 1px rgba(0,0,0,0.47);
     box-shadow: 0px 10px 25px 1px rgba(0,0,0,0.47);
 }
-.botoesRegistro{
-    margin: 2px;
-    color: #F7EDE4;
-    font-size: 25px;
-    border: 2px solid #261E1E;
-    background-color: #261E1E;
-    width: 150px;
-    padding: 10px 0;
-    border-radius: 2em;
-    text-align: center;
-    -webkit-box-shadow: 0px 10px 25px 1px rgba(0,0,0,0.47);
-    -moz-box-shadow: 0px 10px 25px 1px rgba(0,0,0,0.47);
-    box-shadow: 0px 10px 25px 1px rgba(0,0,0,0.47);
+.login{
+    margin-left: 2rem;
 }
 .botoes:hover{
     color:#ebc697 ;
     transition: 0.5s;
 }
- 
-@media screen and (max-width: 450px){
-    #cabecalho .container-conta{
+.logo-laddingpage:hover{
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        margin: auto 0;
+    }
+
+
+    #cabecalho .container-login{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
     #cabecalho .container-opcoes{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
-    #cabecalho .container-imagem{
+    #cabecalho .container-logo{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
     .logo-laddingpage {
-        width: 100%
+        width: 100%;
     
     }
     .botoes{
-        width: 100%;
+        width: 60%;
         font-size: medium;
+        margin-bottom: 1rem;
     }
- 
+    .login{
+        margin-left: 0;
+    }
+
 }
