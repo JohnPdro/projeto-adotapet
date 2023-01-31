@@ -21,6 +21,7 @@ body{
   }
 
 table{
+    
     border-color: #261E1E;
     border-width: 2px;
     border-radius: 2px;
@@ -46,9 +47,10 @@ label{
 }
 
 
-/* .fundoTabela{
-    background-image:url(imagens/planoDeFundoDoacao7.png);
-} */
+.fundo{
+    background-image:url(imagens/planoDeFundoDoacao2.png);
+    background-position: left -250px;
+}
 
 .cabecalho{
     height: 200px;
@@ -140,6 +142,7 @@ a:hover{
 
 .coluna{
     background-color: bisque;
+    border-radius: 50;
 }  
 
 .botaoPreco{
