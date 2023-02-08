@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul{
+    display:flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0 200px;
+}
