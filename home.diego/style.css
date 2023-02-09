@@ -1,8 +1,8 @@
-    /* *{
+    *{
     padding: 0;
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}  */
+}  
 html{
     background-image: url(img/);
 }   
@@ -46,16 +46,29 @@ ul,a:hover{
     display: flex;
     justify-content: space-between;   
 }
+/* ////////////// */
 .doglateral{
-    height: 500px;
+    height: 500px ;
     position: wrap;
-    width: 900px;
-    padding-left: 700px;
-    background-color: #fee8dd;
+    /* width: 900px ; */
+    padding-left: 900px ;
+    
 }
+.fundolateral{
+    background-color: #fee8dd!important;
+}
+/* //////////// */
 .footer{
     background-color: #fee8dd;
     padding: 100px;
     text-align: center;
     color: black;
 }
+#img1, #img2 , #img3 {
+    width: 500px;
+    height: 335px;
+    display: inline-block;
+    padding: 30px;
+
+}
+
