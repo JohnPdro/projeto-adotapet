@@ -5,7 +5,8 @@
   }
   body {
     /* background-image: linear-gradient(45deg, #de985e,rgb(228, 203, 175)); */
-    background-image: url(../imagens-login-cadastro/fundoazul.png);
+    /* background-image: url(../Login/imagens-login-cadastro/fundoazul.png); */
+    background-image: url(../Login/imagens-login-cadastro/pe-cao.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

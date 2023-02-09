@@ -1,0 +1,18 @@
+body{
+    font-family: 'Lilita One', cursive;
+    background-image: url('imagens/background-laddingpage.jpg');
+
+}
+.adotar, .doar{
+    font-size: 3rem;
+}
+
+.link-header{
+    text-decoration: none;
+    color: black;
+}
+
+.link-header:hover{
+    color: rgb(98, 98, 98);
+    transition: 150ms;
+}
