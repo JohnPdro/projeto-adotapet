@@ -1,10 +1,29 @@
-body { 
-    background-color: #FFF8F2
-
-
-    ;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("imagens/fundin.jpg");
+    padding:0px 100px;
+}
+
+body { 
+    background-color: #eee1cf;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+}
 
 
 
