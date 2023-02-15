@@ -14,7 +14,8 @@ nav{
 }
 
 body { 
-    background-color: #eee1cf;
+    background-color: #FEE8DD
+    
 }
 
 ul{
@@ -22,8 +23,17 @@ ul{
     list-style: none;
     gap: 80px;
     font-family: 'Fredoka One', cursive;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+ul,a:hover{
+    cursor: pointer;
+    color:rgb(255, 145, 0);
+    transition: 200ms;
+}
 
