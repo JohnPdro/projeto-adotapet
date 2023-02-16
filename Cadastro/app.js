@@ -9,6 +9,10 @@ let validNome = false
 // let labelEmail = document.querySelector('#labelEmail')
 // let validEmail = false
 
+// let telefone = document.querySelector('#telefone')
+// let labelTelefone = document.querySelector('#labelTelefone')
+// let validTelefone = false
+
 let senha = document.querySelector('#senha')
 let labelSenha = document.querySelector('#labelSenha')
 let validSenha = false
@@ -42,6 +46,20 @@ nome.addEventListener('keyup', ()=>{
 //     labelEmail.innerHTML = 'Email'
 //     email.setAttribute('style', 'border-color: green')
 //     validEmail = true
+//   }
+// })
+
+// telefone.addEventListener('keyup', ()=>{
+//   if(telefone.value.length <= 10){
+//     labelTelefone.setAttribute('style', 'color: red')
+//     labelTelefone.innerHTML = '<strong>Telefone *Insira o DDD e tente novamente </strong>'
+//     telefone.setAttribute('style', 'border-color: red')
+//     validTelefone = false
+//   } else {
+//     labelTelefone.setAttribute('style', 'color: green')
+//     labelTelefone.innerHTML = 'Telefone'
+//     telefone.setAttribute('style', 'border-color: green')
+//     validTelefone = true
 //   }
 // })
 
@@ -80,6 +98,7 @@ function cadastrar(){
   {
     nomeCad: nome.value,
     // emailCad: email.value,
+    TelefoneCad: telefone.value,
     senhaCad: senha.value
   }
   )
