@@ -12,6 +12,7 @@ header{
     margin-bottom: 25px;
     display: flex;
     background-color: #fee8dd ;
+    background: url("img/fundin.jpg");
     width: 100%;
     justify-content: space-between;
     border-bottom-style: solid;
@@ -19,9 +20,9 @@ header{
 }
 
 a{
-
+    
     text-decoration: none;
-    color: black;
+    color: #261E1E;
     
 }
 a:hover{
@@ -89,10 +90,10 @@ a:hover{
 }
 /* //////////// */
 .footer{
-    background-color: #fee8dd;
+    background-color: #3c3232;
     padding: 100px;
     text-align: center;
-    color: black;
+    color: #fee8dd;
 }
 #img1, #img2 , #img3 {
     width: 500px;
