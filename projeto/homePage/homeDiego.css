@@ -1,25 +1,56 @@
-    *{
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+   
+   *{
     padding: 0;
-    margin: 0 0 0 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
 }  
   
-.logo{
-    width: 350px;
-    padding-left: 80px;
-    /* background-color: bisque ; */
-}
-.fundo-logo{
+
+header{
+    font-size: 18px;
+    margin-bottom: 25px;
+    display: flex;
     background-color: #fee8dd ;
     width: 100%;
-    /* background-image: url(img/Fundo.png); */
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-color: #261E1E;
 }
-ul{
-    list-style: none;
+
+a{
+
     text-decoration: none;
-    justify-content: space-evenly; 
+    color: black;
+    
+}
+a:hover{
+    cursor: pointer;
+    transition: 200ms;
+    color:#dea04f;
+    
+}
+
+.espacoGuia{
+    margin-top: 45px;
+}
+
+.espacoLogin{
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.espacoChar{
+    margin: 20px;
+}
+
+
+/* ul{
+    list-style: none;
+    text-decoration: none; 
+    justify-content: center;
     display: flex;
-    align-items: right;
+    align-items: center;
     margin-left: 600px;
     margin-top: -50px;
     font-size: 13px;
@@ -27,22 +58,13 @@ ul{
     font-family: 'PlutoCond';
     
 
-}
+} */
 .marq{
     background-color: #fee8dd;
     padding: 25px;
     margin-top: -25px;
 }
-a{
-    text-decoration: none;
-    color: black;
-    
-}
-ul,a:hover{
-    cursor: pointer;
-    color:burlywood;
-    transition: 200ms;
-}
+
 .container{
     position: relative;
     padding: 90px;
