@@ -32,6 +32,20 @@ a:hover{
     
 }
 
+#animacaoLogo{
+    position: relative;
+    top: 0;
+}
+
+#animacaoLogo:hover{
+    top: -4px;
+    transition: all .2s ease-in-out;
+}
+
+.inputLabel {
+    cursor: pointer;
+}
+
 .espacoGuia{
     margin-top: 45px;
 }
@@ -99,7 +113,7 @@ a:hover{
     width: 500px;
     height: 335px;
     display: inline-block;
-    padding: 60px;
+   
 
 }
 .div89{
