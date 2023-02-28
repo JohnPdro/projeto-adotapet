@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+body { 
+    background: linear-gradient(to top, #ffe5d6 , #ffe8dd,#ffefe7 );
+}
+
+/* nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("imagens/fundin.jpg");
+    padding:0px 100px;
+    border-bottom: 3px solid black;
+} */
+
+header{
+    font-size: 18px;
+    margin-bottom: 25px;
+    display: flex;
+    background-color: #fee8dd ;
+    background: url("imagens/fundin.jpg");
+    width: 100%;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-color: #261E1E;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+}
+
+table{
+    
+    display: flex;
+    margin: auto;
+}
+
+
+td{
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+p{
+    margin: 20px;
+    text-align: center;
+}
+
+a{
+    
+    text-decoration: none;
+    color: #261E1E;
+    
+}
+a:hover{
+    cursor: pointer;
+    transition: 200ms;
+    color:#dea04f;
+    
+}
+
+#animacaoLogo{
+    position: relative;
+    top: 0;
+}
+
+#animacaoLogo:hover{
+    top: -4px;
+    transition: all .2s ease-in-out;
+}
+
+.inputLabel {
+    cursor: pointer;
+}
+
+.espacoGuia{
+    margin-top: 45px;
+}
+
+.espacoLogin{
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.espacoChar{
+    margin: 20px;
+}
+
+.redesSociais{
+   margin-left: 30px;
+}
+
+
+.footer{
+    background-color: #3c3232;
+    padding: 100px;
+    text-align: center;
+    color: #fee8dd;
+}
