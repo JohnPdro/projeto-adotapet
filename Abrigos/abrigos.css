@@ -33,7 +33,14 @@ a{
 }
 ul,a:hover{
     cursor: pointer;
-    color:rgb(255, 145, 0);
+    color:rgb(255, 255, 255);
     transition: 200ms;
 }
 
+div{
+    background: url("imagens/fundin.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
