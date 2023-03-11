@@ -28,9 +28,9 @@ nome.addEventListener('keyup', ()=>{
     nome.setAttribute('style', 'border-color: red')
     validNome = false
   } else {
-    labelNome.setAttribute('style', 'color: green')
+    labelNome.setAttribute('style', 'color: ')
     labelNome.innerHTML = 'Nome'
-    nome.setAttribute('style', 'border-color: green')
+    nome.setAttribute('style', 'border-color: ')
     validNome = true
   }
 })
@@ -70,9 +70,9 @@ senha.addEventListener('keyup', ()=>{
     senha.setAttribute('style', 'border-color: red')
     validSenha = false
   } else {
-    labelSenha.setAttribute('style', 'color: green')
+    labelSenha.setAttribute('style', 'color: ')
     labelSenha.innerHTML = 'Senha'
-    senha.setAttribute('style', 'border-color: green')
+    senha.setAttribute('style', 'border-color: ')
     validSenha = true
   }
 })
@@ -84,9 +84,9 @@ ConfirmSenha.addEventListener('keyup', ()=>{
     ConfirmSenha.setAttribute('style', 'border-color: red')
     validConfirmSenha = false
   } else {
-    labelConfirmSenha.setAttribute('style', 'color: green')
+    labelConfirmSenha.setAttribute('style', 'color: ')
     labelConfirmSenha.innerHTML = 'Confirmar Senha'
-    ConfirmSenha.setAttribute('style', 'border-color: green')
+    ConfirmSenha.setAttribute('style', 'border-color: ')
     validConfirmSenha = true
   }
 })
@@ -97,8 +97,8 @@ function cadastrar(){
   listaUser.push(
   {
     nomeCad: nome.value,
-    // emailCad: email.value,
-    TelefoneCad: telefone.value,
+    emailCad: email.value,
+    // TelefoneCad: telefone.value,
     senhaCad: senha.value
   }
   )
