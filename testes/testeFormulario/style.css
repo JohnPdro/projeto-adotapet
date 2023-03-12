@@ -14,6 +14,7 @@ body{
 }
 
 header{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.381);
     padding: 20px;
     background: url(../../imagens/img/fundin.jpg);
 }
@@ -23,7 +24,8 @@ header  img{
 }
 
 header  nav {
-    display: inline;
+    display: block;
+    
 }
 
 header  a{
@@ -41,9 +43,9 @@ header a:hover{
 form{
     min-width: 300px;
     max-width: 780px;
-    background-color: #ffc48d;
+    background-image: linear-gradient(to bottom, #ffc895, #ffc085, #ffbc7e);
     margin: auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     padding: 20px 100px 40px 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -51,6 +53,7 @@ form{
 }
 
 form h1{
+    
     margin-top: 20px;
     padding: 10px 5px 30px 5px ;
     text-align: center;
@@ -69,10 +72,10 @@ form select{
 }
 
 footer{
-    
+    font-size: 12px;
     display: flex;
     padding: 30px 15px 20px 15px;
-    background-color: #000;
+    background-color: #000000;
 
 }
 
@@ -81,6 +84,7 @@ footer img{
     
 }
 footer p{
+    
     padding-left: 120px;
     text-align: center;
     width: 700px;
@@ -106,26 +110,103 @@ footer li{
     padding: 6px 5px 6px 20px;
 }
 
+.menuInterativo{
+    text-align: center;
+}
+
+.menuLogin{
+    margin-left: 300px;
+}
+
 
 .areaInfo{
     padding-left: 100px;
+}
+.areaInfo select{
+    border-style: none;
+}
+
+.areaInfo select:hover{
+    cursor: pointer;
 }
 
 .txtNome{
     width: 550px;
     padding: 6px;
     border-radius: 6px;
-    border-style: solid;
+    border-style: none;
     font-size: 1.1em;
 }
 
 .inputText{
+    border-radius: 10px;
+    border-style: none;
     padding: 6px;
     width: 550px;
     height: 140px;
     font-size: 1.1em;
 }
 
+.areaArquivo{
+    padding: 10px 0px 5px 0px;
+}
+
+.areaArquivo input{
+    cursor: pointer;
+    margin: 9px;
+}
+
+.spanExtra{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: #000000b9;
+    margin: 10px 0px;
+}
+
+.areaBotoes{
+    padding: 10px 0px 3px 0px;
+    
+}
+
+.areaBotoes input{
+    padding: 10px;
+    margin: 9px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #fee8d8;
+}
+
+.areaBotoes input:hover{
+    cursor: pointer;
+    transition: 200ms;
+    color: white;
+    background-color: #261e1e;
+    border-color: #261e1e;
+}
+
+.areaEnviar{
+    text-align: end;
+    padding: 10px 0px 3px 0px;
+    margin-top: 10px;
+    
+}
+
+.areaEnviar input{
+    padding: 10px 50px;
+    margin: 9px;
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #fee8d8;
+}
+
+.areaEnviar input:hover{
+    cursor: pointer;
+    transition: 200ms;
+    color: white;
+    background-color: #261e1e;
+    border-color: #261e1e;
+}
 
 
 
