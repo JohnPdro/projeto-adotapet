@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+body{
+    background-image:linear-gradient(to top, #fee8d8, #fff0e4, #ffefe3);
+}
+
+header{
+    padding: 20px;
+    background: url(../../imagens/img/fundin.jpg);
+}
+
+header  img{
+    display: inline;
+}
+
+header  nav {
+    display: inline;
+}
+
+header  a{
+    padding:5px 10px;
+    text-decoration: none;
+    color: #261e1e;
+}
+
+header a:hover{
+    cursor: pointer;
+    transition: 200ms;
+    color: #ffc48d;
+}
+
+form{
+    min-width: 300px;
+    max-width: 780px;
+    background-color: #ffc48d;
+    margin: auto;
+    margin-bottom: 150px;
+    padding: 20px 100px 40px 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
+}
+
+form h1{
+    margin-top: 20px;
+    padding: 10px 5px 30px 5px ;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+form label{
+    font-size: 1.5em;
+}
+
+form select{
+    font-size: 1.1em;
+    padding: 6px;
+    border-radius: 6px;
+    width: 300px;
+}
+
+footer{
+    
+    display: flex;
+    padding: 30px 15px 20px 15px;
+    background-color: #000;
+
+}
+
+footer img{
+    margin: auto;
+    
+}
+footer p{
+    padding-left: 120px;
+    text-align: center;
+    width: 700px;
+    color: #fee8d8;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fee8d8;
+}
+
+footer a:hover{
+    cursor: pointer;
+    transition: 200ms;
+    color: #ffc48d;
+}
+
+footer ul{
+    columns: 2;
+}
+
+footer li{
+    padding: 6px 5px 6px 20px;
+}
+
+
+.areaInfo{
+    padding-left: 100px;
+}
+
+.txtNome{
+    width: 550px;
+    padding: 6px;
+    border-radius: 6px;
+    border-style: solid;
+    font-size: 1.1em;
+}
+
+.inputText{
+    padding: 6px;
+    width: 550px;
+    height: 140px;
+    font-size: 1.1em;
+}
+
+
+
+
