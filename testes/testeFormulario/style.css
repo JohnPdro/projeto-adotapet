@@ -138,6 +138,14 @@ footer li{
     font-size: 1.1em;
 }
 
+.inputIdade{
+    width: 290px;
+    padding: 6px;
+    border-radius: 6px;
+    border-style: none;
+    font-size: 1.1em;
+}
+
 .inputText{
     border-radius: 10px;
     border-style: none;
@@ -145,6 +153,10 @@ footer li{
     width: 550px;
     height: 140px;
     font-size: 1.1em;
+}
+
+.idadeAproximada{
+    font-size: 16px;
 }
 
 .areaArquivo{
