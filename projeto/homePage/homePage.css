@@ -11,25 +11,24 @@ a{
 
 body{
     background-color: #FEE8DB;
-    font-family: 'Lilita One', cursive;
-    
-    
+    font-family: 'Lilita One', cursive;   
 }
+
 .background{
     background: linear-gradient(0deg, #FEE8DB 0%, rgba(254, 232, 219, 0) 36.69%), url(imagens/background-laddingpage.png);
     height: 800px;
+        
     
 }
 .logo-adotapet{
     margin-top: 30px;
     width: 410px;   
     
-    
 }
 
 #cabecalho{
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 0 auto 116px auto;
     
 
 }
@@ -110,6 +109,10 @@ body{
     margin-left: 20px;
 }
 
-@media screen and (max-width: 400px){
-    
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1280px;
+    margin: 0 auto;
 }
