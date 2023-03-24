@@ -126,7 +126,7 @@ li img{
 
 .lista-imagens{
     list-style: none;
-    padding: 50px 100px;
+    padding: 30px 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -150,3 +150,19 @@ li img{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+h1{
+    padding: 40px;
+    text-align: center;
+}
+
+#animacaoOng{
+    position: relative;
+    top: 0;
+}
+
+#animacaoOng:hover{
+    top: -9px;
+    transition: all .2s ease-in-out;
+}
+
