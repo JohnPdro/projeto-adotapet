@@ -17,6 +17,7 @@ header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.381);
     padding: 20px;
     background: url(../../imagens/img/fundin.jpg);
+    /* background-color: #261e1e; */
 }
 
 header  img{
@@ -44,13 +45,20 @@ header a:hover{
 }
 
 body {
-    background-image:linear-gradient(to top, #fee8d8, #fff0e4, #ffefe3);
+    background-image: linear-gradient(to bottom, #ffc895, #ffc085, #ffbc7e);
 }
 
-form{
+/* .container{
+     width: 100%;
+    height: 100vh; 
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+} */
+
+form {
     min-width: 300px;
     max-width: 780px;
-    background-image: linear-gradient(to bottom, #ffc895, #ffc085, #ffbc7e);
+    background-image:linear-gradient(to top, #fee8d8, #fff0e4, #ffefe3);
     margin: auto;
     margin-bottom: 100px;
     padding: 20px 100px 40px 100px;
@@ -59,26 +67,25 @@ form{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
 }
 
-form h1{
-    
+form h1 {
     margin-top: 20px;
     padding: 10px 5px 30px 5px ;
     text-align: center;
     font-size: 1.8em;
 }
 
-form label{
+form label {
     font-size: 1.5em;
 }
 
-form select{
+form select {
     font-size: 1.1em;
     padding: 6px;
     border-radius: 6px;
     width: 300px;
 }
 
-.input-group{
+.input-group {
     display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -108,7 +115,8 @@ form select{
 }
 
 .input-box label,
-.gender-title h6 {
+.gender-title h6,
+.select label {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
@@ -140,14 +148,40 @@ form select{
     color: #000000c0;
 }
 
-.select-group{
+.select-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
 }
 
-footer{
+.select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.select select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.select select:hover {
+    background-color: #eeeeee75;
+}
+
+.select select:focus-visble {
+    outline: 1px solid #E18229;
+}
+
+.select select::placeholder {
+    color: #000000be;
+}
+
+footer {
     font-size: 12px;
     display: flex;
     padding: 30px 15px 20px 15px;
@@ -155,11 +189,11 @@ footer{
 
 }
 
-footer img{
+footer img {
     margin: auto;
     
 }
-footer p{
+footer p {
     
     padding-left: 120px;
     text-align: center;
@@ -167,39 +201,39 @@ footer p{
     color: #fee8d8;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #fee8d8;
 }
 
-footer a:hover{
+footer a:hover {
     cursor: pointer;
     transition: 200ms;
     color: #ffc48d;
 }
 
-footer ul{
+footer ul { 
     columns: 2;
 }
 
-footer li{
+footer li {
     padding: 6px 5px 6px 20px;
 }
-#animacaoLogo{
+#animacaoLogo {
     position: relative;
     top: 0;
 }
 
-#animacaoLogo:hover{
+#animacaoLogo:hover {
     top: -4px;
     transition: all .3s ease-in-out;
 }
 
-.menuInterativo{
+.menuInterativo { 
     text-align: center;
 }
 
-.menuLogin{
+.menuLogin {
     margin-left: 300px;
 }
 
@@ -224,98 +258,3 @@ footer li{
     color: black;
 } 
 
-/* .container{
-     width: 100%;
-    height: 100vh; 
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-}
-
-.form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 3rem;
-}
-
-.form-header {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-header h1::after {  essa linha é apenas para fazer o risco colorido abaixo do Cadastrar 
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #E18229;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-}
-
-.input-group{
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
-
-.input-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.1rem;
-}
-
-.input-box input {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-}
-
-.input-box input:hover {
-    background-color: #eeeeee75;
-}
-
-.input-box input:focus-visble {
-    outline: 1px solid #E18229;
-}
-
-.input-box label,
-.gender-title h6 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.input-box input::placeholder {
-    color: #000000be;
-}
-
-.gender-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
-}
-
-.gender-input {
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input {
-    margin-right: 0.35rem;
-}
-
-.gender-input label {
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
-}*/
