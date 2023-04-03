@@ -52,10 +52,8 @@ body{
 }
 
 .ong-button:hover{
-    transition: 200ms;
-    -webkit-box-shadow: inset 10px -10px 10px -4px rgba(0,0,0,0.4);
-    -moz-box-shadow: inset 10px -10px 10px -4px rgba(0,0,0,0.4);
-    box-shadow: inset 10px -10px 10px -4px rgba(0,0,0,0.4);
+    opacity: 0.9;
+    transition: 300ms;
 }
 
 .ong-button{
@@ -98,6 +96,12 @@ body{
     color: #FFFFFF;
     padding: 23px 69px;
 }
+
+.button-adotar:hover{
+    opacity: 0.9;
+    transition: 300ms;
+}
+
 .button-doar{
     background: #261E1E;
     border-radius: 20px;
@@ -109,10 +113,47 @@ body{
     margin-left: 20px;
 }
 
+.button-doar:hover{
+    opacity: 0.9;
+    transition: 300ms;
+}
+
 .container-cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1280px;
     margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.carrosel-main{
+    margin-bottom: 130px;
+}
+
+.title-cards{
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.varias-patas{
+position: absolute;
+width: 720px;
+height: 1280px;
+left: 0px;
+top: 1200px;
+}
+.varias-patas2{
+position: absolute;
+width: 720px;
+height: 1206.28px;
+left: 1300px;
+top: 1450px;
+}
+
+#rodape{
+    width: 1920px;
+    height: 360px;
+    background: url(imagens/background-laddingpage.png), #4E4E4E;
+    background-blend-mode: multiply, normal;
 }
