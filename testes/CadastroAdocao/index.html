@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastre-se </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="menuInterativo">
+        <a href="" id="animacaoLogo"><img src="../../imagens/img/logo.png" width="200" alt=""></a>
+        <nav>
+            <a href="../../projeto/homePage/homePage.html">HOME</a>
+            <a href="#">DOE PET</a>
+            <a href="../../projeto/abrigos/abrigos.html">ABRIGOS</a>
+            <a href="../../projeto/sobre/sobre.html">SOBRE NÓS</a>
+            <a  href="../../projeto/login/login.html">ENTRAR</a>
+    </div>
+    </nav>
+</header>
+
+<body>
+<div class="container">
+        <div class="form">
+            <form action="#"> <!-- o "#" somente está ai porque no momento eu ainda não defini uma ação no js -->
+              <div class="form-header">
+               
+                <div class="title">
+                  <h1>Cadastre-se</h1>
+              </div>
+
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="nome">Nome</label>
+                  <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                
+                <div class="input-box">
+                  <label for="sobrenome">Sobrenome</label>
+                  <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+                
+                <div class="input-box">
+                  <label for="aniversario">Aniversário</label>
+                  <input id="aniversario" type="date" name="aniversario" placeholder="" required>
+                </div>
+                
+                <div class="input-box">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" name="email" placeholder="Informe um Email válido" required>
+                </div>
+                
+                <div class="input-box">
+                  <label for="telefone">Telefone</label>
+                  <input id="telefone" type="tel" name="telefone" placeholder="Digite seu telefone" required>
+                </div>
+            
+                  <div class="input-box">
+                    <label for="animal">Você já tem algum animal?</label>
+                    <input id="animal" type="text" name="animal" placeholder="Se sim qual?" required>
+                  </div>
+
+                  <div class="gender-inputs">
+               <div class="gender-title">
+                   <h6>Gênero</h6>
+               </div>
+
+               <div class="gender-group">
+                   <div class="gender-input">
+                       <input type="radio" id="feminino" name="gender">
+                           <label for="feminino">Feminino</label>
+                       </inpu>
+                   </div>
+
+                   <div class="gender-input">
+                       <input type="radio" id="masculino" name="gender">
+                           <label for="masculino">Masculino</label>
+                       </inpu>
+                   </div>
+
+                   <div class="gender-input">
+                       <input type="radio" id="outros" name="gender">
+                           <label for="outros">Outros</label>
+                       </inpu>
+                   </div>
+
+                   <div class="gender-input">
+                       <input type="radio" id="nenhum" name="gender">
+                           <label for="nenhum">Prefiro não dizer</label>
+                       </inpu>
+                   </div>
+               </div>
+              </div>
+
+                <div class="select-group">
+                    <div class="select">
+                  <label for="trabalho">Você trabalha?</label>
+                  <select name="pergunta[trabalho]" id="trabalho" placeholder="" required>
+                    <option value></option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                </div>
+
+                <div class="select">
+                    <label for="moradia">Onde você mora?</label>
+                    <select name="pergunta[moradia]" id="moradia" placeholder="" required>
+                        <option value></option>
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="chacara">Chacara</option>
+                        <option value="sitio">Sítio</option>
+                    </select>
+                  </div>
+
+                  <div class="select">
+                    <label for="espaço">Onde você mora tem bastante espaço?</label>
+                    <select name="pergunta[espaço]" id="espaço" placeholder="" required>
+                        <option value></option>
+                        <option value="sim">Sim, tenho um quintal ou jardim grande</option>
+                        <option value="medio">Sim, tenho quintal ou jardim médio</option>
+                        <option value="nao">Não, onde eu moro tem pouco espaço</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- <div class="input-box">
+                  <label for="cep">CEP</label>
+                  <input id="cep" type="number" name="cep" placeholder="Digite o CEP da rua" required>
+                </div> -->
+                
+                <!-- <div class="input-box">
+                   <label for="senha">Senha</label>
+                   <input id="senha" type="password" name="senha" placeholder="Digite uma senha" required>
+                 </div>
+
+                 <div class="input-box">
+                   <label for="ConfirmSenha">Confirmar Senha</label>
+                   <input id="ConfirmSenha" type="password" name="ConfirmSenha" placeholder="Digite sua senha novamente" required>
+                 </div>
+              </div> -->
+
+              <div class="cadastrar-button">
+               <button onclick="cadastrar()"><a href="#"></a>Cadastrar</button><!-- para linkar com a homepage basta substituir o "#" pelo link da homepage -->
+              </div>
+            </form>
+         </div>
+       </div>
+       <script src="cadastro.js"></script>
+    
+</body>
+
+<footer>
+    <ul>
+        <li><a href="../../projeto/homePage/homePage.html">HOME</a></li>
+        <li><a href="">DOE PET</a></li>
+        <li><a href="../../projeto/abrigos/abrigos.html">ABRIGOS</a></li>
+        <li><a href="../../projeto/sobre/sobre.html">SOBRE NÓS</a></li>
+        <li><a href="../../projeto/login/login.html">ENTRAR</a></li>
+    </ul>
+    <p>Somos uma provedora de hospedagem de sites e nossa missão é promover o sucesso a todos que
+        querem começar sua jornada online. Para isso, buscamos sempre melhorar a tecnologia dos nossos servidores,
+        oferecer um suporte profissional e tornar a experiência dos nossos clientes com a hospedagem de sites a
+        melhor
+        de todas.</p>
+    <img src="../../imagens/img/logo.png" width="200" alt="">
+    </div>
+</footer>
+
+</html>

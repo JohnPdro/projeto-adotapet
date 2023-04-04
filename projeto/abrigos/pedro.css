@@ -10,15 +10,6 @@ body {
     background: #ffe5d6;
 }
 
-/* nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: url("imagens/fundin.jpg");
-    padding:0px 100px;
-    border-bottom: 3px solid black;
-} */
-
 header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.381);
     padding: 20px;
@@ -86,6 +77,10 @@ a:hover{
     color:#dea04f;
     
 }
+
+li img{
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.432);
+}
 .menuInterativo{
     text-align: center;
 }
@@ -128,3 +123,46 @@ a:hover{
     text-align: center;
     color: #fee8dd;
 }
+
+.lista-imagens{
+    list-style: none;
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lista-imagens2{
+    list-style: none;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lista-imagens3{
+    list-style: none;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h1{
+    padding: 40px;
+    text-align: center;
+}
+
+#animacaoOng{
+    position: relative;
+    top: 0;
+}
+
+#animacaoOng:hover{
+    top: -9px;
+    transition: all .2s ease-in-out;
+}
+
