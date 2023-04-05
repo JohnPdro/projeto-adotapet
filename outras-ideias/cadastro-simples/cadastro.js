@@ -5,9 +5,9 @@ let nome = document.querySelector('#nome')
 let labelNome = document.querySelector('#labelNome')
 let validNome = false
 
-// let email = document.querySelector('#email')
-// let labelEmail = document.querySelector('#labelEmail')
-// let validEmail = false
+let email = document.querySelector('#email')
+let labelEmail = document.querySelector('#labelEmail')
+let validEmail = false
 
 // let telefone = document.querySelector('#telefone')
 // let labelTelefone = document.querySelector('#labelTelefone')
