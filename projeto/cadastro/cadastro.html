@@ -22,6 +22,9 @@
                    <h1>Cadastre-se</h1>
                </div>
 
+               <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
                  <div class="login-button">
                    <button><a href="../../projeto/login/login.html">Login</a></button>
                  </div>
@@ -29,47 +32,47 @@
 
                <div class="input-group">
                  <div class="input-box">
-                   <label for="nome">Nome</label>
+                   <label id="labelNome" for="nome">Nome</label>
                    <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
                  </div>
                  
                  <div class="input-box">
-                   <label for="sobrenome">Sobrenome</label>
+                   <label id="labelSobrenome" for="sobrenome">Sobrenome</label>
                    <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
                  </div>
                  
                  <div class="input-box">
-                   <label for="aniversario">Aniversário</label>
+                   <label id="labelAniversario" for="aniversario">Aniversário</label>
                    <input id="aniversario" type="date" name="aniversario" placeholder="" required>
                  </div>
                  
                  <div class="input-box">
-                   <label for="email">Email</label>
+                   <label id="labelEmail" for="email">Email</label>
                    <input id="email" type="email" name="email" placeholder="Informe um Email válido" required>
                  </div>
                  
                  <div class="input-box">
-                   <label for="telefone">Telefone</label>
+                   <label id="labelTelefone" for="telefone">Telefone</label>
                    <input id="telefone" type="tel" name="telefone" placeholder="Digite seu telefone" required>
                  </div>
                  
                  <div class="input-box">
-                   <label for="endereco">Endereço</label>
+                   <label id="labelEndereco" for="endereco">Endereço</label>
                    <input id="endereco" type="text" name="endereco" placeholder="Digite seu endereço" required>
                  </div>
                  
                  <!-- <div class="input-box">
-                   <label for="cep">CEP</label>
+                   <label id="labelCep" for="cep">CEP</label>
                    <input id="cep" type="number" name="cep" placeholder="Digite o CEP da rua" required>
                  </div> -->
                  
                  <div class="input-box">
-                    <label for="senha">Senha</label>
+                    <label id="labelSenha" for="senha">Senha</label>
                     <input id="senha" type="password" name="senha" placeholder="Digite uma senha" required>
                   </div>
 
                   <div class="input-box">
-                    <label for="ConfirmSenha">Confirmar Senha</label>
+                    <label id="labelConfirmSenha" for="ConfirmSenha">Confirmar Senha</label>
                     <input id="ConfirmSenha" type="password" name="ConfirmSenha" placeholder="Digite sua senha novamente" required>
                   </div>
                </div>
@@ -82,31 +85,31 @@
                 <div class="gender-group">
                     <div class="gender-input">
                         <input type="radio" id="feminino" name="gender">
-                            <label for="feminino">Feminino</label>
+                            <label id="labelFemi" for="feminino">Feminino</label>
                         </input>
                     </div>
 
                     <div class="gender-input">
                         <input type="radio" id="masculino" name="gender">
-                            <label for="masculino">Masculino</label>
+                            <label id="labelMasc" for="masculino">Masculino</label>
                         </input>
                     </div>
 
                     <div class="gender-input">
                         <input type="radio" id="outros" name="gender">
-                            <label for="outros">Outros</label>
+                            <label id="labelOutros" for="outros">Outros</label>
                         </input>
                     </div>
 
                     <div class="gender-input">
                         <input type="radio" id="nenhum" name="gender">
-                            <label for="nenhum">Prefiro não dizer</label>
+                            <label id="labelNenhum" for="nenhum">Prefiro não dizer</label>
                         </input>
                     </div>
                 </div>
                </div>
                <div class="cadastrar-button">
-                <button onclick="cadastrar()"><a href="#"></a>Cadastrar</button><!-- para linkar com a homepage basta substituir o "#" pelo link da homepage -->
+                <button onclick="cadastrar()"><a href="../../projeto/homePage/homePage.html"></a>Cadastrar</button><!-- para linkar com a homepage basta substituir o "#" pelo link da homepage -->
                </div>
              </form>
           </div>
