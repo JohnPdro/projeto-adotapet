@@ -7,13 +7,16 @@
 }
 
 body { 
-    background: #ffe5d6;
+    background-image: url('../../imagens/img/fundin.jpg');
+    
+    
 }
 
 header{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.381);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.381); */
     padding: 20px;
-    background: url(../../imagens/img/fundin.jpg);
+    background-color: #ffffffe3;
+    /* background: url(../../imagens/img/fundin.jpg); */
 }
 
 header  img{
@@ -40,7 +43,7 @@ header a:hover{
     color: #ffc48d;
 }
 
-ul{
+/* ul{
     display: flex;
     list-style: none;
     gap: 80px;
@@ -48,16 +51,14 @@ ul{
     font-size: 25px;
 }
 
-table{
-    
-    display: flex;
-    margin: auto;
-}
-
 
 td{
     padding: 10px;
     border-bottom: 3px solid black;
+} */
+
+ul li{
+    padding-bottom: 69px;
 }
 
 p{
@@ -116,39 +117,31 @@ li img{
    margin-left: 30px;
 }
 
-
-.footer{
-    background-color: #3c3232;
-    padding: 100px;
-    text-align: center;
-    color: #fee8dd;
-}
-
 .lista-imagens{
     list-style: none;
-    padding: 30px 100px;
-    display: flex;
+    padding: 50px 100px;
+    display: inline-block;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
 }
 
 .lista-imagens2{
     list-style: none;
     padding: 50px 100px;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
 }
 
 .lista-imagens3{
     list-style: none;
     padding: 50px 100px;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;  
 }
 
 h1{
@@ -166,3 +159,42 @@ h1{
     transition: all .2s ease-in-out;
 }
 
+footer{
+    font-size: 12px;
+    display: flex;
+    padding: 30px 15px 20px 15px;
+    background-color: #ffffff;
+
+}
+
+footer img{
+    margin: auto;
+    
+}
+footer p{
+    font-size: 14px;
+    padding-left: 120px;
+    text-align: center;
+    width: 700px;
+    color: #000000;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover{
+    cursor: pointer;
+    transition: 200ms;
+    color: #ffc48d;
+}
+
+footer .ulFooter{
+    columns: 2;
+}
+
+footer .liFooter{
+    list-style: none;
+    padding: 6px 5px 6px 20px;
+}
