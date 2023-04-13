@@ -153,7 +153,17 @@ top: 1450px;
 
 #rodape{
     width: 1920px;
-    height: 360px;
+    height: 500px;
     background: url(imagens/background-laddingpage.png), #4E4E4E;
     background-blend-mode: multiply, normal;
+}
+.container-footer{
+    text-align: center;
+    padding-top: 50px;
+    
+}
+ul{list-style-type: none;
+}
+.img-rodape{
+    padding: 50px;
 }
