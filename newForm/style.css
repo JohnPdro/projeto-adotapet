@@ -123,6 +123,7 @@ textarea{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
 }
 
+/* <comentario 3> Area das informacoes esxtras */
 fieldset{
     margin-right: 100px;
     padding: 20px;
@@ -150,6 +151,7 @@ fieldset #btnNecessidades{
     display: block;
     margin-bottom: 30px;
 }
+/* </comentario 3> */
 
 #btnEnviar{
     margin-left: 75%;
