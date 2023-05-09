@@ -13,6 +13,8 @@ body{
     background-color: rgb(255, 255, 255) ;
 }
 
+/* <comentario 0> Tratamento do cabeçalho*/
+
 header{
     background-image: url(../imagens/img/fundin.jpg);
 }
@@ -25,7 +27,7 @@ header > nav{
 }
 
 header > nav > a{
-    padding: 6px;
+    padding: 9px;
     text-decoration: none;
     font-family: 'Fredoka One', cursive;
     color: #261e1e;
@@ -41,7 +43,7 @@ header > #logo{
     display: block;
     text-align: center;
 }
-
+/* </comentario 0>  */
 
 form{
     padding: 20px 40px 20px 100px;
@@ -49,6 +51,8 @@ form{
     margin: auto;
     background-image:linear-gradient(to top, #f0dfd2, #f1dfd0, #f7e3d4);
     box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.219);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     
 }
 
@@ -74,6 +78,15 @@ form > .posicaoPerguntas{
 form > .posicaoPerguntas > label,select{
     display: block;
 }
+/* <comentario 1> Modificando tamanho do input (nome e especie) */
+#inome{
+    width: 260px;
+}
+
+#iespecie{
+    width: 500px;
+}
+/* </comentario 1> */
 
 form > .posicaoPerguntas > select{
     width: 200px;
@@ -85,13 +98,7 @@ form > .posicaoPerguntas > select{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
 }
 
-textarea{
-    width: 500px;
-    border-style: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
-}
-
+/* <comentario 2> Tratamento do select sexo (.lblSexo = posicionamento do label) */
 .lblSexo{
     padding: 10px;
 }
@@ -104,10 +111,77 @@ textarea{
     margin-left: 5px;
 }
 
-#inome{
-    width: 260px;
+.lblSexo input,label:hover{
+    cursor: pointer;
+}
+/* </comentario 2> */
+
+textarea{
+    width: 600px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
 }
 
-#iespecie{
-    width: 500px;
+fieldset{
+    margin-right: 100px;
+    padding: 20px;
+    border-style: dashed;
+    border-color: #261e1e;
+}
+
+fieldset legend{
+    font-family: 'Fredoka One', cursive;
+    padding: 0px 10px;
+}
+
+fieldset input{
+    margin: 5px 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+
+fieldset input:hover{
+    cursor: pointer;
+    background: #f09342a5;
+}
+
+
+fieldset #btnNecessidades{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#btnEnviar{
+    margin-left: 75%;
+    font-size: 1.3em;
+    padding: 16px;
+    margin-top: 46px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+
+#btnEnviar:hover{
+    cursor: pointer;
+    background: #f09342a5;
+}
+
+footer{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34) ;
+    margin-top: 160px;
+    font-family: 'Fredoka One' , cursive;
+    font-size: 0.90em;
+}
+
+footer>  #guiaFooter> img, p{
+    display: block;
+    margin: auto;
+    
+    
+}
+
+footer p{
+    width: 690px;
+    padding: 10px;
+    text-align: center;
 }
