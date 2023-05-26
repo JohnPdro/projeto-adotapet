@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
+    
+    <title> Login </title>
 </head>
-
-<body>
-    <div class="container">
-        <div class="card">
-            <h1> Login </h1>
-
-            <div class="label-float">
-                <input type="text" id="usuario" placeholder="" required>
-                <label for="usuario">Usuario</label>
+<body>   
+    <main id="container">
+        <form id="login_form">
+            <!-- Form Header -->
+            <div id="form_header">
+                <h1>Login</h1>
             </div>
 
-            <div class="label-float">
-                <input type="password" id="senha" placeholder="" required>
-                <label for="senha">Senha</label>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+            <!-- icones de midia social -->
+            <div id="social_media">
+                <!-- Facebook -->
+                <a href="#">
+                    <img src="../../projeto/login/imagens-login-cadastro/facebook.png" alt="">
+                </a>
+
+                <!-- Google -->
+                <a href="#">
+                    <img src="../../projeto/login/imagens-login-cadastro/google.png" alt="Google logo">
+                </a>
+                
+                <!-- GitHub -->
+                <a href="#">
+                    <img src="../../projeto/login/imagens-login-cadastro/github.png" alt="">
+                </a>
             </div>
 
-            <div class="justify-center">
-                <button>Entrar</button>
+            <!-- Inputs -->
+            <div id="inputs">
+                <!-- Nome -->
+                <div class="input-box">
+                    <label for="nome">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- Email -->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- Senha -->
+                <div class="input-box">
+                    <label for="senha">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="senha" id="senha" name="senha">
+                        </div>
+                    </label>
+                    
+                    <!-- cadastre-se -->
+                    <div id="cadastre-se">
+                        <p> Não tem uma conta?
+                            <a href="../../projeto/cadastro/cadastro.html"> Cadastre-se </a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="justify-center">
-                <hr>
-            </div>
+            <!-- Login Button -->
+            <button type="submit" id="login_button">Login</button>
+        </form>
+    </main>
 
-            <p> Não tem uma conta?
-                <a href="../../projeto/cadastro/cadastro.html"> Cadastre-se </a>
-            </p>
-
-        </div>
-    </div>
-    <script src="app.js"></script>
 </body>
-
 </html>

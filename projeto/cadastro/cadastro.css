@@ -121,28 +121,6 @@ body {
     color: #000000be;
 }
 
-.gender-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
-}
-
-.gender-input {
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input {
-    margin-right: 0.35rem;
-}
-
-.gender-input label {
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
 .cadastrar-button button {
     width: 100%;
     margin-top: 2.5rem;
@@ -163,6 +141,7 @@ body {
     font-weight: 500;
     color: black;
 }
+
 /*todas as linha de código abaixo são para tornar a tela de casdastro responsiva*/
 @media screen and (max-width: 1330px) {
     .form-image {
