@@ -16,7 +16,7 @@ body{
 /* <comentario 0> Tratamento do cabeçalho*/
 
 header{
-    background-image: url(../imagens/img/fundin.jpg);
+    background-image: url(../../imagens/img/fundin.jpg);
 }
 
 header > nav{
