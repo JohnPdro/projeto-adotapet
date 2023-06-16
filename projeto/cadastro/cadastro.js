@@ -5,9 +5,9 @@ let nome = document.querySelector('#nome')
 let labelNome = document.querySelector('#labelNome')
 let validNome = false
 
-let sobrenome = document.querySelector('#sobrenome')
-let labelSobrenome = document.querySelector('#labelSobrenome')
-let validSobrenome = false
+// let sobrenome = document.querySelector('#sobrenome')
+// let labelSobrenome = document.querySelector('#labelSobrenome')
+// let validSobrenome = false
 
 let aniversario = document.querySelector('#aniversario')
 let labelAniversario = document.querySelector('#labelAniversario')
@@ -21,9 +21,9 @@ let telefone = document.querySelector('#telefone')
 let labelTelefone = document.querySelector('#labelTelefone')
 let validTelefone = false
 
-let endereco = document.querySelector('#endereco')
-let labelEndereco = document.querySelector('#labelEndereco')
-let validEndereco = false
+// let endereco = document.querySelector('#endereco')
+// let labelEndereco = document.querySelector('#labelEndereco')
+// let validEndereco = false
 
 let senha = document.querySelector('#senha')
 let labelSenha = document.querySelector('#labelSenha')
@@ -139,11 +139,9 @@ function cadastrar(){
   listaUser.push(
   {
     nomeCad: nome.value,
-    sobrenomeCad: sobrenome.value,
     aniversarioCad: aniversario.value,
     emailCad: email.value,
     telefoneCad: telefone.value,
-    enderecoCad: endereco.value,
     senhaCad: senha.value,
     feminino: feminino.value,
     masculino: masculino.value,

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(255, 255, 255) ;
+}
+
+/* <comentario 0> Tratamento do cabeçalho*/
+
+header{
+    background-image: url(../../imagens/img/fundin.jpg);
+}
+
+header > nav{
+    display:block;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+header > nav > a{
+    padding: 9px;
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    color: #261e1e;
+
+}
+
+header > nav > a:hover{
+    color: #f09342;
+}
+
+header > #logo{
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+}
+/* </comentario 0>  */
+
+form{
+    padding: 20px 40px 20px 100px;
+    width: 700px;
+    margin: auto;
+    background-image:linear-gradient(to top, #f0dfd2, #f1dfd0, #f7e3d4);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.219);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+
+form label {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+}
+
+form input{
+    padding: 9px;
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1em;
+    
+}
+
+form > .posicaoPerguntas{
+    padding: 20px 0px;
+}
+
+form > .posicaoPerguntas > label,select{
+    display: block;
+}
+/* <comentario 1> Modificando tamanho do input (nome e especie) */
+#inome{
+    width: 260px;
+}
+
+#iespecie{
+    width: 500px;
+}
+/* </comentario 1> */
+
+form > .posicaoPerguntas > select{
+    width: 200px;
+    padding: 9px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1em;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+
+/* <comentario 2> Tratamento do select sexo (.lblSexo = posicionamento do label) */
+.lblSexo{
+    padding: 10px;
+}
+
+.lblSexo > input{
+    margin-left: 20px;
+}
+
+.lblSexo > label{
+    margin-left: 5px;
+}
+
+.lblSexo input,label:hover{
+    cursor: pointer;
+}
+/* </comentario 2> */
+
+textarea{
+    width: 600px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+
+/* <comentario 3> Area das informacoes esxtras */
+fieldset{
+    margin-right: 100px;
+    padding: 20px;
+    border-style: dashed;
+    border-color: #261e1e;
+}
+
+fieldset legend{
+    font-family: 'Fredoka One', cursive;
+    padding: 0px 10px;
+}
+
+fieldset input{
+    margin: 5px 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+
+fieldset input:hover{
+    cursor: pointer;
+    background: #f09342a5;
+}
+
+
+fieldset #btnNecessidades{
+    display: block;
+    margin-bottom: 30px;
+}
+/* </comentario 3> */
+
+#btnEnviar{
+    margin-left: 75%;
+    font-size: 1.3em;
+    padding: 16px;
+    margin-top: 46px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+
+#btnEnviar:hover{
+    cursor: pointer;
+    background: #f09342a5;
+}
+
+footer{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34) ;
+    margin-top: 160px;
+    font-family: 'Fredoka One' , cursive;
+    font-size: 0.90em;
+}
+
+footer>  #guiaFooter> img, p{
+    display: block;
+    margin: auto;
+    
+    
+}
+
+footer p{
+    width: 690px;
+    padding: 10px;
+    text-align: center;
+}
