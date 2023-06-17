@@ -6,7 +6,7 @@
         <a href="#">DOE PET</a>
         <a href="../../projeto/abrigos/abrigos.html">ABRIGOS</a>
         <a href="../../projeto/sobre/sobre.html">SOBRE NÓS</a>
-        <a href="../../projeto/login/login.html">ENTRAR</a>
-        <a href="../../projeto/cadastro/cadastro.html">CADASTRAR</a>
+        <a href="../../projeto/login/login.php">ENTRAR</a>
+        <a href="../../projeto/cadastro/cadastro.php">CADASTRAR</a>
     </nav>
 </header>

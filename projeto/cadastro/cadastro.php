@@ -25,7 +25,7 @@
             <div id="msgSuccess"></div>
 
                  <div class="login-button">
-                   <button><a href="../../projeto/login/login.html">Login</a></button>
+                   <button><a href="../../projeto/login/login.php">Login</a></button>
                  </div>
                </div>
 

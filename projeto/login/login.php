@@ -81,7 +81,7 @@
                     <!-- cadastre-se -->
                     <div id="cadastre-se">
                         <p> Não tem uma conta?
-                            <a href="../../projeto/cadastro/cadastro.html"> Cadastre-se </a>
+                            <a href="../../projeto/cadastro/cadastro.php"> Cadastre-se </a>
                         </p>
                     </div>
                 </div>
