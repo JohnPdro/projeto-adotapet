@@ -1,3 +1,4 @@
+  <link  rel="stylesheet" href="menu.css">
 <header>
     <a href="../projeto/homePage/homePage.html" id="logo"><img src="../../imagens/img/logo.png" width="200"
             alt=""></a>

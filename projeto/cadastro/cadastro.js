@@ -125,57 +125,57 @@ ConfirmSenha.addEventListener('keyup', ()=>{
   }
 })
 
-// function cadastrar(){
-//   let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+function cadastrar(){
+  let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
   
-//   listaUser.push(
-//   {
-//     nomeCad: nome.value,
-//     emailCad: email.value,
-//     telefoneCad: telefone.value,
-//     enderecoCad: endereco.value,
-//     bairroCad: bairro.value,
-//     cidadeCad: cidade.value,
-//     estadoCad: estado.value,
-//     cnpj_cpfCad: cnpj_cpf.value,
-//     senhaCad: senha.value
-//   }
-//   )
+  listaUser.push(
+  {
+    nomeCad: nome.value,
+    emailCad: email.value,
+    telefoneCad: telefone.value,
+    enderecoCad: endereco.value,
+    bairroCad: bairro.value,
+    cidadeCad: cidade.value,
+    estadoCad: estado.value,
+    cnpj_cpfCad: cnpj_cpf.value,
+    senhaCad: senha.value
+  }
+  )
   
-//   localStorage.setItem('listaUser', JSON.stringify(listaUser))
+  localStorage.setItem('listaUser', JSON.stringify(listaUser))
   
-//   if(validNome && validSobrenome && validSenha && validConfirmSenha){
-//     msgSuccess.setAttribute('style', 'display: block')
-//     msgSuccess.innerHTML = '<strong>Cadastrado!</strong>'
-//     msgError.setAttribute('style', 'display: none')
-//     msgError.innerHTML = ''
+  if(validNome && validSobrenome && validSenha && validConfirmSenha){
+    msgSuccess.setAttribute('style', 'display: block')
+    msgSuccess.innerHTML = '<strong>Cadastrado!</strong>'
+    msgError.setAttribute('style', 'display: none')
+    msgError.innerHTML = ''
     
-//     setTimeout(()=>{
-//       window.location.href = // falta colocar o caminho para a homePage
-//     }, 3000)
+    setTimeout(()=>{
+      window.location.href = <img href="../homePage/HomePage.php"></img>
+    }, 3000)
 
-//   } else {
-//     msgError.setAttribute('style', 'display: block')
-//     msgError.innerHTML = '<strong>Preencha Todos os Campos!</strong>'
-//     msgSuccess.setAttribute('style', 'display: none')
-//     msgSuccess.innerHTML = ''
-//   }
-// }
+  } else {
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = '<strong>Preencha Todos os Campos!</strong>'
+    msgSuccess.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = ''
+  }
+}
 
-// btn.addEventListener('click', ()=> {
-//   let inputSenha = document.querySelector('#senha')
-//   if(inputSenha.getAttribute('type') == 'password') {
-//     inputSenha.setAttribute ('type', 'text')
-//   } else {
-//     inputSenha.setAttribute ('type', 'password')
-//   }
-// })
+btn.addEventListener('click', ()=> {
+  let inputSenha = document.querySelector('#senha')
+  if(inputSenha.getAttribute('type') == 'password') {
+    inputSenha.setAttribute ('type', 'text')
+  } else {
+    inputSenha.setAttribute ('type', 'password')
+  }
+})
 
-// btnConfirm.addEventListener('click', ()=> {
-//   let inputConfirmSenha = document.querySelector('#ConfirmSenha')
-//   if(inputConfirmSenha.getAttribute('type') == 'password') {
-//     inputConfirmSenha.setAttribute ('type', 'text')
-//   } else {
-//     inputConfirmSenha.setAttribute ('type', 'password')
-//   }
-// })
+btnConfirm.addEventListener('click', ()=> {
+  let inputConfirmSenha = document.querySelector('#ConfirmSenha')
+  if(inputConfirmSenha.getAttribute('type') == 'password') {
+    inputConfirmSenha.setAttribute ('type', 'text')
+  } else {
+    inputConfirmSenha.setAttribute ('type', 'password')
+  }
+})
