@@ -5,14 +5,6 @@ let nome = document.querySelector('#nome')
 let labelNome = document.querySelector('#labelNome')
 let validNome = false
 
-// let sobrenome = document.querySelector('#sobrenome')
-// let labelSobrenome = document.querySelector('#labelSobrenome')
-// let validSobrenome = false
-
-let aniversario = document.querySelector('#aniversario')
-let labelAniversario = document.querySelector('#labelAniversario')
-let validAniversario = false
-
 let email = document.querySelector('#email')
 let labelEmail = document.querySelector('#labelEmail')
 let validEmail = false
@@ -21,9 +13,25 @@ let telefone = document.querySelector('#telefone')
 let labelTelefone = document.querySelector('#labelTelefone')
 let validTelefone = false
 
-// let endereco = document.querySelector('#endereco')
-// let labelEndereco = document.querySelector('#labelEndereco')
-// let validEndereco = false
+let endereco = document.querySelector('#endereco')
+let labelEndereco = document.querySelector('#labelEndereco')
+let validEndereco = false
+
+let bairro = document.querySelector('#bairro')
+let labelBairro = document.querySelector('#labelBairro')
+let validBairro = false
+
+let cidade = document.querySelector('#cidade')
+let labelCidade = document.querySelector('#labelCidade')
+let validCidade = false
+
+let estado = document.querySelector('#estado')
+let labelEstado = document.querySelector('#labelEstado')
+let validEstado = false
+
+let cnpj_cpf = document.querySelector('#cnpj_cpf')
+let labelCnpj_Cpf = document.querySelector('#labelCnpj_Cpf')
+let validCnpj_Cpf = false
 
 let senha = document.querySelector('#senha')
 let labelSenha = document.querySelector('#labelSenha')
@@ -32,22 +40,6 @@ let validSenha = false
 let ConfirmSenha = document.querySelector('#ConfirmSenha')
 let labelConfirmSenha = document.querySelector('#labelConfirmSenha')
 let validConfirmSenha = false
-
-let masculino = document.querySelector('#masculino')
-let labelMasc = document.querySelector('#labelMasc')
-let validMasc = false
-
-let feminino = document.querySelector('#feminino')
-let labelFemi = document.querySelector('#labelFemi')
-let validFemi = false
-
-let outros = document.querySelector('#outros')
-let labelOutros = document.querySelector('#labelOutros')
-let validOutros = false
-
-let nenhum = document.querySelector('#nenhum')
-let labelNenhum = document.querySelector('#labelNenhum')
-let validNenhum = false
 
 // nome.addEventListener('keyup', ()=>{
 //   if(nome.value.length <= 3){
@@ -133,57 +125,57 @@ ConfirmSenha.addEventListener('keyup', ()=>{
   }
 })
 
-function cadastrar(){
-  let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+// function cadastrar(){
+//   let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
   
-  listaUser.push(
-  {
-    nomeCad: nome.value,
-    aniversarioCad: aniversario.value,
-    emailCad: email.value,
-    telefoneCad: telefone.value,
-    senhaCad: senha.value,
-    feminino: feminino.value,
-    masculino: masculino.value,
-    outro: outros.value,
-    nenhum: nenhum.value
-  }
-  )
+//   listaUser.push(
+//   {
+//     nomeCad: nome.value,
+//     emailCad: email.value,
+//     telefoneCad: telefone.value,
+//     enderecoCad: endereco.value,
+//     bairroCad: bairro.value,
+//     cidadeCad: cidade.value,
+//     estadoCad: estado.value,
+//     cnpj_cpfCad: cnpj_cpf.value,
+//     senhaCad: senha.value
+//   }
+//   )
   
-  localStorage.setItem('listaUser', JSON.stringify(listaUser))
+//   localStorage.setItem('listaUser', JSON.stringify(listaUser))
   
-  if(validNome && validSobrenome && validSenha && validConfirmSenha){
-    msgSuccess.setAttribute('style', 'display: block')
-    msgSuccess.innerHTML = '<strong>Cadastrado!</strong>'
-    msgError.setAttribute('style', 'display: none')
-    msgError.innerHTML = ''
+//   if(validNome && validSobrenome && validSenha && validConfirmSenha){
+//     msgSuccess.setAttribute('style', 'display: block')
+//     msgSuccess.innerHTML = '<strong>Cadastrado!</strong>'
+//     msgError.setAttribute('style', 'display: none')
+//     msgError.innerHTML = ''
     
-    // setTimeout(()=>{
-    //   window.location.href = 
-    // }, 3000)
+//     setTimeout(()=>{
+//       window.location.href = // falta colocar o caminho para a homePage
+//     }, 3000)
 
-  } else {
-    msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = '<strong>Preencha Todos os Campos!</strong>'
-    msgSuccess.setAttribute('style', 'display: none')
-    msgSuccess.innerHTML = ''
-  }
-}
+//   } else {
+//     msgError.setAttribute('style', 'display: block')
+//     msgError.innerHTML = '<strong>Preencha Todos os Campos!</strong>'
+//     msgSuccess.setAttribute('style', 'display: none')
+//     msgSuccess.innerHTML = ''
+//   }
+// }
 
-btn.addEventListener('click', ()=> {
-  let inputSenha = document.querySelector('#senha')
-  if(inputSenha.getAttribute('type') == 'password') {
-    inputSenha.setAttribute ('type', 'text')
-  } else {
-    inputSenha.setAttribute ('type', 'password')
-  }
-})
+// btn.addEventListener('click', ()=> {
+//   let inputSenha = document.querySelector('#senha')
+//   if(inputSenha.getAttribute('type') == 'password') {
+//     inputSenha.setAttribute ('type', 'text')
+//   } else {
+//     inputSenha.setAttribute ('type', 'password')
+//   }
+// })
 
-btnConfirm.addEventListener('click', ()=> {
-  let inputConfirmSenha = document.querySelector('#ConfirmSenha')
-  if(inputConfirmSenha.getAttribute('type') == 'password') {
-    inputConfirmSenha.setAttribute ('type', 'text')
-  } else {
-    inputConfirmSenha.setAttribute ('type', 'password')
-  }
-})
+// btnConfirm.addEventListener('click', ()=> {
+//   let inputConfirmSenha = document.querySelector('#ConfirmSenha')
+//   if(inputConfirmSenha.getAttribute('type') == 'password') {
+//     inputConfirmSenha.setAttribute ('type', 'text')
+//   } else {
+//     inputConfirmSenha.setAttribute ('type', 'password')
+//   }
+// })
