@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+include "../includes/cabecalho.php";
+include "../includes/menu.php";
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= Lilita +One & display=swap" rel="stylesheet">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="formulario.css">
-</head>
-
-<header>
-    <div class="menuInterativo">
-        <a href="" id="animacaoLogo"><img src="../../imagens/img/logo.png" width="200" alt=""></a>
-        <nav>
-            <a href="../../projeto/homePage/homePage.html">HOME</a>
-            <a href="#">DOE PET</a>
-            <a href="../../projeto/abrigos/abrigos.html">ABRIGOS</a>
-            <a href="../../projeto/sobre/sobre.html">SOBRE NÓS</a>
-            <a  href="../../projeto/login/login.html">ENTRAR</a>
-            <a  href="../../projeto/cadastro/cadastro.html">CADASTRAR</a>
-    </div>
-
-    </nav>
-</header>
 
 <body>
     <form action="">
@@ -166,24 +143,8 @@
     </form>
 </body>
 
-
-<footer>
-    <ul>
-        <li><a href="../../projeto/homePage/homePage.html">HOME</a></li>
-        <li><a href="">DOE PET</a></li>
-        <li><a href="../../projeto/abrigos/abrigos.html">ABRIGOS</a></li>
-        <li><a href="../../projeto/sobre/sobre.html">SOBRE NÓS</a></li>
-        <li><a href="../../projeto/login/login.html">ENTRAR</a></li>
-        <li><a href="../../projeto/cadastro/cadastro.html">CADASTRAR</a></li>
-    </ul>
-    <p>Somos uma provedora de hospedagem de sites e nossa missão é promover o sucesso a todos que
-        querem começar sua jornada online. Para isso, buscamos sempre melhorar a tecnologia dos nossos servidores,
-        oferecer um suporte profissional e tornar a experiência dos nossos clientes com a hospedagem de sites a
-        melhor
-        de todas.</p>
-    <img src="../../imagens/img/logo.png" width="200" alt="">
-    </div>
-</footer>
+<?php
+include "../includes/rodape.php";
+?>
 
 
-</html>
