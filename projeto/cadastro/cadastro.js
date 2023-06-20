@@ -55,20 +55,6 @@ let validConfirmSenha = false
 //   }
 // })
 
-// sobrenome.addEventListener('keyup', ()=>{
-//     if(sobrenome.value.length <= 3){
-//       labelSobrenome.setAttribute('style', 'color: red')
-//       labelSobrenome.innerHTML = '<strong>Sobrenome *Insira no minimo 3 caracteres</strong>'
-//       sobrenome.setAttribute('style', 'border-color: red')
-//       validSobrenome = false
-//     } else {
-//       labelSobrenome.setAttribute('style', 'color: ')
-//       labelSobrenome.innerHTML = 'Sobrenome'
-//       sobrenome.setAttribute('style', 'border-color: ')
-//       validSobrenome = true
-//     }
-//   })
-
 // email.addEventListener('keyup', ()=>{
 //   if(email.value.length != email){
 //     labelEmail.setAttribute('style', 'color: red')
@@ -144,15 +130,15 @@ function cadastrar(){
   
   localStorage.setItem('listaUser', JSON.stringify(listaUser))
   
-  if(validNome && validSobrenome && validSenha && validConfirmSenha){
+  if(validNome && validEmail && validTelefone && validEndereco && validBairro && validCidade && validEstado && validCnpj_Cpf && validSenha && validConfirmSenha){
     msgSuccess.setAttribute('style', 'display: block')
     msgSuccess.innerHTML = '<strong>Cadastrado!</strong>'
     msgError.setAttribute('style', 'display: none')
     msgError.innerHTML = ''
     
-    setTimeout(()=>{
-      window.location.href = <img href="../homePage/HomePage.php"></img>
-    }, 3000)
+    // setTimeout(()=>{
+    //    window.location.href = //<img href="../homePage/HomePage.php"></img>
+    // }, 3000)
 
   } else {
     msgError.setAttribute('style', 'display: block')
