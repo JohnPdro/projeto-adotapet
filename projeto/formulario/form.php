@@ -1,6 +1,6 @@
 <?php
-include "../projeto/includes/cabecalho.php";
-include "../projeto/includes/menu.php";
+include "../includes/cabecalho.php";
+include "../includes/menu.php";
 ?>
 
 
@@ -96,5 +96,5 @@ include "../projeto/includes/menu.php";
 
 
 <?php
-include "../projeto-adotapet/projeto/includes/rodape.php";
+include "../includes/rodape.php";
 ?>

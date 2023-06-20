@@ -25,7 +25,7 @@
           <div id="msgSuccess"></div>
 
           <div class="login-button">
-            <button><a href="../../projeto/login/login.php">Login</a></button>
+            <button type="submit"><a href="../../projeto/login/login.php">Login</a></button>
           </div>
         </div>
 
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="cadastrar-button">
-          <button onclick="cadastrar()"><a href="../homePage/homePage.php"></a>Cadastrar</button><!-- para linkar com a homepage basta substituir o "#" pelo link da homepage -->
+          <button onclick="cadastrar()" type="submit"><a href="../homePage/homePage.php"></a>Cadastrar</button><!-- para linkar com a homepage basta substituir o "#" pelo link da homepage -->
         </div>
       </form>
     </div>
