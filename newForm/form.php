@@ -1,14 +1,9 @@
-<<<<<<<< Updated upstream:projeto/formulario/form.php
 <?php
 include "../includes/cabecalho.php";
 include "../includes/menu.php";
 ?>
 
-========
->>>>>>>> Stashed changes:projeto/formulario/form.html
 
-<link rel="import" href="../projeto/includes/cabecalho.html">
-<link rel="import" href="../projeto/includes/menu.html">
 <br>
 <body>
     <main>
@@ -96,14 +91,10 @@ include "../includes/menu.php";
             </fieldset>
 
             <input id="btnEnviar" type="submit" value="Registrar Pet">
-        
+        </form>
     </main>
-    <source>
 
-<<<<<<<< Updated upstream:projeto/formulario/form.php
 
 <?php
 include "../includes/rodape.php";
 ?>
-========
->>>>>>>> Stashed changes:projeto/formulario/form.html

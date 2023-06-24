@@ -1,3 +1,8 @@
+<?php
+include "../includes/cabecalho.php";
+include "../includes/menu.php";
+?>
+
 
 <body>
     <form action="">
@@ -138,11 +143,8 @@
     </form>
 </body>
 
-<<<<<<< Updated upstream:testes/testeFormulario/formulario.php
 <!-- <?php
 include "../includes/rodape.php";
 ?> -->
-=======
->>>>>>> Stashed changes:projeto/formulario/formulario.html
 
 
