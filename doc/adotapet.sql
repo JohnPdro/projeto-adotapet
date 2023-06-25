@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24-Jun-2023 às 20:16
+-- Tempo de geração: 25-Jun-2023 às 17:05
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -32,18 +32,19 @@ USE `adotapet`;
 
 CREATE TABLE `animais` (
   `id_animal` int(11) NOT NULL,
-  `idade` int(11) DEFAULT NULL,
-  `sexo` varchar(20) NOT NULL,
-  `foto` varchar(1000) DEFAULT NULL,
   `nome` varchar(100) NOT NULL,
-  `especie` varchar(100) NOT NULL,
-  `porte` varchar(100) NOT NULL,
+  `especie` varchar(50) NOT NULL,
+  `idade` int(11) DEFAULT NULL,
+  `sexo` varchar(50) NOT NULL,
+  `foto` varchar(100) DEFAULT NULL,
+  `porte` varchar(50) NOT NULL,
+  `comportamento` varchar(100) NOT NULL,
+  `sobre_pet` varchar(500) DEFAULT NULL,
   `cidade` varchar(100) NOT NULL,
   `estado` varchar(2) NOT NULL,
-  `sobre_pet` varchar(250) NOT NULL,
-  `comportamento` varchar(100) NOT NULL,
-  `id_ongs` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `id_ong` int(11) DEFAULT NULL,
+  `id_protetor` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -52,19 +53,38 @@ CREATE TABLE `animais` (
 --
 
 CREATE TABLE `ongs` (
-  `telefone` varchar(20) NOT NULL,
-  `Id_ong` int(11) NOT NULL,
+  `id_ong` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
-  `endereco` varchar(200) NOT NULL,
-  `email` varchar(250) NOT NULL,
+  `telefone` varchar(50) NOT NULL,
+  `email` varchar(150) NOT NULL,
   `cnpj_cpf` varchar(50) NOT NULL,
-  `estado` varchar(2) NOT NULL,
+  `foto` varchar(1000) DEFAULT NULL,
+  `endereco` varchar(250) NOT NULL,
+  `bairro` varchar(150) NOT NULL,
   `cidade` varchar(100) NOT NULL,
-  `bairro` varchar(100) NOT NULL,
-  `senha` varchar(100) NOT NULL,
-  `foto` varchar(1000) NOT NULL,
-  `id_animal` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `estado` varchar(2) NOT NULL,
+  `senha` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `protetores`
+--
+
+CREATE TABLE `protetores` (
+  `id_protetor` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `telefone` varchar(50) NOT NULL,
+  `data_nascimento` date NOT NULL,
+  `cpf` varchar(50) NOT NULL,
+  `endereco` varchar(250) NOT NULL,
+  `bairro` varchar(150) NOT NULL,
+  `cidade` varchar(100) NOT NULL,
+  `estado` varchar(2) NOT NULL,
+  `senha` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Índices para tabelas despejadas
@@ -75,14 +95,20 @@ CREATE TABLE `ongs` (
 --
 ALTER TABLE `animais`
   ADD PRIMARY KEY (`id_animal`),
-  ADD KEY `id_ongs` (`id_ongs`);
+  ADD KEY `id_ong` (`id_ong`),
+  ADD KEY `id_protetor` (`id_protetor`);
 
 --
 -- Índices para tabela `ongs`
 --
 ALTER TABLE `ongs`
-  ADD PRIMARY KEY (`Id_ong`),
-  ADD KEY `id_animal` (`id_animal`);
+  ADD PRIMARY KEY (`id_ong`);
+
+--
+-- Índices para tabela `protetores`
+--
+ALTER TABLE `protetores`
+  ADD PRIMARY KEY (`id_protetor`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -98,7 +124,13 @@ ALTER TABLE `animais`
 -- AUTO_INCREMENT de tabela `ongs`
 --
 ALTER TABLE `ongs`
-  MODIFY `Id_ong` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ong` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `protetores`
+--
+ALTER TABLE `protetores`
+  MODIFY `id_protetor` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restrições para despejos de tabelas
@@ -108,7 +140,8 @@ ALTER TABLE `ongs`
 -- Limitadores para a tabela `animais`
 --
 ALTER TABLE `animais`
-  ADD CONSTRAINT `animais_ibfk_1` FOREIGN KEY (`id_ongs`) REFERENCES `ongs` (`Id_ong`);
+  ADD CONSTRAINT `animais_ibfk_1` FOREIGN KEY (`id_ong`) REFERENCES `ongs` (`id_ong`),
+  ADD CONSTRAINT `animais_ibfk_2` FOREIGN KEY (`id_protetor`) REFERENCES `protetores` (`id_protetor`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
