@@ -14,7 +14,7 @@
       <img src="../../projeto/login/imagens-login-cadastro/undraw_everyday_life_re_1lfb.svg"> <!-- observação aparentemente é necessario que a imagem seja .svg para funcionar o código -->
     </div>
     <div class="form">
-      <form action="#" method="post"> <!-- o "#" somente está ai porque no momento eu ainda não defini uma ação no js -->
+      <form action="../homePage/homePage.html" method="post"> <!-- action está direcionando a "ong" para a homepage após se cadastrar-->
         <div class="form-header">
 
           <div class="title">
@@ -25,7 +25,7 @@
           <div id="msgSuccess"></div>
 
           <div class="login-button">
-            <button type="submit"><a href="../../projeto/login/login.php">Login</a></button>
+            <button type="submit" id="login_button"><a href="../../projeto/login/login.php">Login</a></button>
           </div>
         </div>
 
@@ -36,13 +36,13 @@
           </div>
 
           <div class="input-box">
-            <label id="labelEmail" for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Informe um Email válido" required>
+            <label id="labelTelefone" for="telefone">Telefone</label>
+            <input id="telefone" type="tel" name="telefone" placeholder="Digite seu Telefone" required>
           </div>
 
           <div class="input-box">
-            <label id="labelTelefone" for="telefone">Telefone</label>
-            <input id="telefone" type="tel" name="telefone" placeholder="Digite seu Telefone" required>
+            <label id="labelEmail" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Informe um Email válido" required>
           </div>
 
           <div class="input-box">
@@ -81,17 +81,20 @@
           </div>
         </div>
         <div class="cadastrar-button">
-          <button onclick="cadastrar()" type="submit"><a href="../homePage/homePage.php"></a>Cadastrar</button><!-- para linkar com a homepage basta substituir o "#" pelo link da homepage -->
+          <button type="submit" onclick="cadastrar()" id="cadastrar_button"><a href="../homePage/homePage.html"></a>Cadastrar</button>
         </div>
       </form>
     </div>
   </div>
 
   <?php
+  
+  include "../includes/conexao.php";
+
   if (isset($_POST["nome"])) {
     $nome = $_POST["nome"];
-    $email = $_POST["email"];
     $telefone = $_POST["telefone"];
+    $email = $_POST["email"];
     $endereco = $_POST["endereco"];
     $bairro = $_POST["bairro"];
     $cidade = $_POST["cidade"];
@@ -100,8 +103,8 @@
     $senha = $_POST["senha"];
 } else {
     $nome = "";
-    $email = "";
     $telefone = "";
+    $email = "";
     $endereco = "";
     $bairro = "";
     $cidade = "";
@@ -109,16 +112,38 @@
     $cnpj_cpf = "";
     $senha = "";
 }
+  $sql = "insert into ongs(nome, telefone, email, endereco, bairro, cidade, estado, cnpj_cpf, senha) values('$nome', '$telefone', '$email', '$endereco', '$bairro', '$cidade', '$estado', '$cnpj_cpf', '$senha')";
 
-  include "../includes/conexao.php";
-
-  $sql = "insert into ongs(nome, email, telefone, endereco, bairro, cidade, estado, cnpj_cpf, senha) values('$nome', '$email', '$telefone', '$endereco', '$bairro', '$cidade', '$estado', '$cnpj_cpf', '$senha')";
-
-  if (!empty($nome) && !empty($email) && !empty($telefone) && !empty($endereco) && !empty($bairro) && !empty($cidade) && !empty($estado) && !empty($cnpj_cpf) && !empty($senha)) {
+  if (!empty($nome) && !empty($telefone) && !empty($email) && !empty($endereco) && !empty($bairro) && !empty($cidade) && !empty($estado) && !empty($cnpj_cpf) && !empty($senha)) {
     mysqli_query($conexao, $sql);
-  }
-
+   }
+  
   mysqli_close($conexao);
+
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//   $nome = $_POST["nome"];
+//   $email = $_POST["email"];
+//   $telefone = $_POST["telefone"];
+//   $endereco = $_POST["endereco"];
+//   $bairro = $_POST["bairro"];
+//   $cidade = $_POST["cidade"];
+//   $estado = $_POST["estado"];
+//   $cnpj_cpf = $_POST["cnpj_cpf"];
+//   $senha = $_POST["senha"];
+
+//   if (!empty($nome) && !empty($telefone) && !empty($email) && !empty($endereco) && !empty($bairro) && !empty($cidade) && !empty($estado) && !empty($cnpj_cpf) && !empty($senha)) {
+//       $sql = "INSERT INTO ongs (nome, telefone, email, endereco, bairro, cidade, estado, cnpj_cpf, senha) VALUES ('$nome', '$telefone', '$email', '$endereco', '$bairro', '$cidade', '$estado', '$cnpj_cpf', '$senha')";
+//       if (mysqli_query($conexao, $sql)) {
+//           echo "Registro inserido com sucesso!";
+//       } else {
+//           echo "Erro na inserção do registro: " . mysqli_error($conexao);
+//       }
+//   } else {
+//       echo "Por favor, preencha todos os campos obrigatórios.";
+//   }
+// }
+
+// mysqli_close($conexao);
   ?>
 
   <script src="cadastro.js"></script>
