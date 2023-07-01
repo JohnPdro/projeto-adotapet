@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25-Jun-2023 às 17:05
+-- Tempo de geração: 01-Jul-2023 às 02:45
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -20,9 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `adotapet`
 --
-DROP DATABASE IF EXISTS `adotapet`;
-CREATE DATABASE IF NOT EXISTS `adotapet` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `adotapet`;
 
 -- --------------------------------------------------------
 
@@ -30,20 +27,22 @@ USE `adotapet`;
 -- Estrutura da tabela `animais`
 --
 
-CREATE TABLE `animais` (
-  `id_animal` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `animais` (
+  `id_animal` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `especie` varchar(50) NOT NULL,
   `idade` int(11) DEFAULT NULL,
   `sexo` varchar(50) NOT NULL,
   `foto` varchar(100) DEFAULT NULL,
-  `porte` varchar(50) NOT NULL,
-  `comportamento` varchar(100) NOT NULL,
+  `tamanho` varchar(50) NOT NULL,
   `sobre_pet` varchar(500) DEFAULT NULL,
   `cidade` varchar(100) NOT NULL,
   `estado` varchar(2) NOT NULL,
   `id_ong` int(11) DEFAULT NULL,
-  `id_protetor` int(11) DEFAULT NULL
+  `id_protetor` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_animal`),
+  KEY `id_ong` (`id_ong`),
+  KEY `id_protetor` (`id_protetor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
@@ -52,8 +51,8 @@ CREATE TABLE `animais` (
 -- Estrutura da tabela `ongs`
 --
 
-CREATE TABLE `ongs` (
-  `id_ong` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `ongs` (
+  `id_ong` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `telefone` varchar(50) NOT NULL,
   `email` varchar(150) NOT NULL,
@@ -63,7 +62,8 @@ CREATE TABLE `ongs` (
   `bairro` varchar(150) NOT NULL,
   `cidade` varchar(100) NOT NULL,
   `estado` varchar(2) NOT NULL,
-  `senha` varchar(150) NOT NULL
+  `senha` varchar(150) NOT NULL,
+  PRIMARY KEY (`id_ong`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
@@ -72,8 +72,8 @@ CREATE TABLE `ongs` (
 -- Estrutura da tabela `protetores`
 --
 
-CREATE TABLE `protetores` (
-  `id_protetor` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `protetores` (
+  `id_protetor` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `email` varchar(150) NOT NULL,
   `telefone` varchar(50) NOT NULL,
@@ -83,54 +83,9 @@ CREATE TABLE `protetores` (
   `bairro` varchar(150) NOT NULL,
   `cidade` varchar(100) NOT NULL,
   `estado` varchar(2) NOT NULL,
-  `senha` varchar(150) NOT NULL
+  `senha` varchar(150) NOT NULL,
+  PRIMARY KEY (`id_protetor`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Índices para tabelas despejadas
---
-
---
--- Índices para tabela `animais`
---
-ALTER TABLE `animais`
-  ADD PRIMARY KEY (`id_animal`),
-  ADD KEY `id_ong` (`id_ong`),
-  ADD KEY `id_protetor` (`id_protetor`);
-
---
--- Índices para tabela `ongs`
---
-ALTER TABLE `ongs`
-  ADD PRIMARY KEY (`id_ong`);
-
---
--- Índices para tabela `protetores`
---
-ALTER TABLE `protetores`
-  ADD PRIMARY KEY (`id_protetor`);
-
---
--- AUTO_INCREMENT de tabelas despejadas
---
-
---
--- AUTO_INCREMENT de tabela `animais`
---
-ALTER TABLE `animais`
-  MODIFY `id_animal` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `ongs`
---
-ALTER TABLE `ongs`
-  MODIFY `id_ong` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `protetores`
---
-ALTER TABLE `protetores`
-  MODIFY `id_protetor` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restrições para despejos de tabelas
