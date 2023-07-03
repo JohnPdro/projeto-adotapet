@@ -244,7 +244,7 @@ function cadastrar() {
 
     // Redirecionar para a página inicial após o cadastro
     setTimeout(() => {
-      window.location.href = '../homePage/homePage.php';
+      window.location.href = '../homePage/homePage.html';
     }, 3000);
   } else {
     msgError.setAttribute('style', 'display: block');
