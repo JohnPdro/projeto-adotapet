@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Cadastro </title>
+  <link rel="stylesheet" href="cadastro.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+  <div class="container">
+    <div class="form-image">
+      <img src="../../projeto/login/imagens-login-cadastro/undraw_everyday_life_re_1lfb.svg"> <!-- observação aparentemente é necessario que a imagem seja .svg para funcionar o código -->
+    </div>
+    <div class="form">
+      <form action="../cadastro/cadastro.php" method="post"> <!-- action está direcionando a "ong" para a homepage após se cadastrar-->
+        <div class="form-header">
+
+          <div class="title">
+            <h1>Cadastre-se</h1>
+          </div>
+
+          <div id="msgError"></div>
+          <div id="msgSuccess"></div>
+
+          <div class="login-button">
+            <button type="submit" id="login_button"><a href="../../projeto/login/login.php">Login</a></button>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <label id="labelNome" for="nome">Nome</label>
+            <input id="nome" type="text" name="nome" placeholder="Nome completo" required>
+          </div>
+
+          <div class="input-box">
+            <label id="labelEmail" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Informe um Email válido" required>
+          </div>
+          
+          <div class="input-box">
+            <label id="labelTelefone" for="telefone">Telefone</label>
+            <input id="telefone" type="tel" name="telefone" placeholder="Digite seu Telefone" required>
+          </div>
+          
+          <div class="input-box">
+            <label id="labelCpf" for="cpf">CPF</label>
+            <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" required>
+          </div>
+
+          <div class="input-box">
+            <label id="labelDataNascimento" for="data_nascimento">Data de Nascimento</label>
+            <input id="data_nascimento" type="date" name="data_nascimento" placeholder="Digite sua Data de Nascimento" required>
+          </div>
+
+          <div class="input-box">
+            <label id="labelEndereco" for="endereco">Endereço</label>
+            <input id="endereco" type="text" name="endereco" placeholder="Digite seu Endereço" required>
+          </div>
+
+          <div class="input-box">
+            <label id="labelBairro" for="bairro">Bairro</label>
+            <input id="bairro" type="text" name="bairro" placeholder="Digite o Bairro" required>
+          </div>
+
+          <div class="input-box">
+            <label id="labelCidade" for="cidade">Cidade</label>
+            <input id="cidade" type="text" name="cidade" placeholder="Digite a Cidade" required>
+          </div>
+
+          <div class="input-box">
+            <label id="labelEstado" for="estado">Estado</label>
+            <input id="estado" type="text" name="estado" placeholder="Digite o Estado" required>
+          </div>       
+
+          <div class="input-box">
+            <label id="labelSenha" for="senha">Senha</label>
+            <input id="senha" type="password" name="senha" placeholder="Digite uma senha" required>
+          </div>
+
+          <div class="input-box">
+            <label id="labelConfirmSenha" for="ConfirmSenha">Confirmar Senha</label>
+            <input id="ConfirmSenha" type="password" name="ConfirmSenha" placeholder="Digite sua senha novamente" required>
+          </div>
+        </div>
+        <div class="cadastrar-button">
+          <button type="submit" onclick="cadastrar()" id="cadastrar_button">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
