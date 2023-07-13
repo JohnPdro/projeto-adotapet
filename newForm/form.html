@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Lilita +One & display=swap" rel="stylesheet">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+    <a href="../projeto/homePage/homePage.html" id="logo"><img src="../../imagens/img/logo.png" width="200"
+            alt=""></a>
+    <nav>
+        <a href="../../projeto/homePage/homePage.html">HOME</a>
+        <a href="#">DOE PET</a>
+        <a href="../../projeto/abrigos/abrigos.html">ABRIGOS</a>
+        <a href="../../projeto/sobre/sobre.html">SOBRE NÓS</a>
+        <a href="../../projeto/login/login.html">ENTRAR</a>
+        <a href="../../projeto/cadastro/cadastro.html">CADASTRAR</a>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+
+            <div class="posicaoPerguntas">
+                <label for="inome">Nome*</label>
+                <input type="text" name="nome" id="inome" placeholder="Digite o nome do seu pet aqui!"
+                    autocomplete="nickname" required>
+            </div>
+            <div class="posicaoPerguntas">
+
+                <label for="iespecie">Espécie*</label>
+                <input type="" name="especie" id="iespecie" required>
+            </div>
+
+            <div clas="posicaoPerguntas">
+                <label for="">Sexo*</label>
+                <div class="lblSexo">
+                    <input type="radio" name="sexo" id="isexom" checked><label for="isexom">Macho</label>
+                    <input type="radio" name="sexo" id="isexof"><label for="isexof">Fêmea</label>
+                </div>
+            </div>
+
+            <div class="posicaoPerguntas">
+                <label for="iidade">Idade:</label>
+                <input type="number" name="idade" id="iidade" placeholder="Aproximadamente">
+            </div>
+
+            <div class="posicaoPerguntas">
+                <label for="itamanho">Tamanho*</label>
+                <select name="tamanho" id="itamanho" required>
+                    <option value="" selected>---Esolha---</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+
+            <div class="posicaoPerguntas">
+                <label for="iestado">Estado*</label>
+                <select name="estado" id="iestado">
+                    <option value="" selected>---Esolha---</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </div>
+
+            <div class="posicaoPerguntas">
+                <label for="icidade">Cidade*</label>
+                <select name="cidade" id="icidade">
+                    <option value="" selected>---Esolha---</option>
+                    <option value="americana">Americana</option>
+                    <option value="santaBarbara">Santa Barbara D'Oeste</option>
+                    <option value="sumare">Sumaré</option>
+                    <option value="novaOdessa">Nova Odessa</option>
+                    <option value="limeira">Limeira</option>
+                    <option value="hortolandia">Hortolândia</option>
+                    <option value="piracicaba">Piracicaba</option>
+                    <option value="campinas">Campinas</option>
+                </select>
+            </div>
+
+            <div class="posicaoPerguntas">
+                <label for="isobre">Fale sobre seu pet:</label>
+                <textarea name="sobrePet" id="isobre" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="posicaoPerguntas">
+                <label for="ifoto">Foto do seu pet</label>
+                <input type="file" name="foto" id="ifoto" required>
+            </div>
+
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+
+                <input id="btnNecessidades" type="button" name="necessidadesEsp" id="incssddESP" value="Necessidades Especiais">
+                <input type="button" name="carinhoso" id="icarinhoso" value="Carinhoso">
+                <input type="button" name="calmo" id="icalmo" value="Calmo">
+                <input type="button" name="agitado" id="iagitado" value="Agitado">
+                <input type="button" name="docil" id="idocil" value="Dócil">
+                <input type="button" name="bravo" id="ibravo" value="Bravo">
+                <input type="button" name="medroso" id="imedroso" value="Medroso">
+                <input type="button" name="independente" id="iindependente" value="Independente">
+                <input type="button" name="sociavel" id="isociavel" value="Sociável com animais">
+            </fieldset>
+
+            <input id="btnEnviar" type="submit" value="Registrar Pet">
+        </form>
+    </main>
+</body>
+
+<footer>
+    <div id="guiaFooter">
+    <img src="../../imagens/img/logo.png" width="200" alt="">
+    <p>Bem-vindo ao nosso site de adoção de animais! Somos uma equipe de iniciantes em programação que se uniu para criar esta plataforma com o objetivo de ajudar animais a encontrar um lar amoroso. Nosso site é sem fins lucrativos e foi criado com muito esforço e dedicação para a nossa comunidade. Esperamos que você goste da experiência em nosso site e, se puder, ajude a compartilhar essa ideia para que mais pessoas possam adotar e cuidar desses animais tão especiais. Juntos podemos fazer a diferença!</p>
+    </div>
+</footer>
+
+</html>
