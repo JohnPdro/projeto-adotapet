@@ -13,7 +13,6 @@
 
     <title> Login </title>
 </head>
-<body>
 
 <body>   
     <main id="container">
