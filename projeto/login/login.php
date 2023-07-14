@@ -13,7 +13,25 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
         $senha = $conexao->real_escape_string($_POST['senha']);
 
         $sql_ongs = "SELECT * FROM ongs WHERE email = '$email' AND senha = '$senha'";
+        $resultado_ongs = mysqli_query($conexao, $sql_ongs) or die("Falaha na execução do código sql: " . $conexao->error);
+
         $sql_protetores = "SELECT * FROM protetores WHERE email = '$email' AND senha = '$senha'";
+        $resultado_protetores = mysqli_query($conexao, $sql_protetores) or die("Falaha na execução do código sql: " . $conexao->error);
+
+        if (mysqli_num_rows($resultado_ongs) > 0) {
+            $ongs = $resultado_ongs->fetch_assoc();
+
+            if(!isset($_SESSION)) {
+                session_start();
+            }
+
+            header('location: ../../projeto/homePage/homePage.html');
+
+        } elseif (mysqli_num_rows($resultado_protetores) > 0) {
+            
+        } else {
+            echo "Falha ao logar! Email ou Senha inválidos";
+        }
     }
 }
 ?>

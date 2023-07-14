@@ -86,9 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die('Erro ao consultar o banco de dados: ' . mysqli_error($conexao));
     }
 
-    // Verificar se as credenciais estão corretas em alguma das tabelas
     if (mysqli_num_rows($resultado_ongs) > 0) {
-        // Login bem-sucedido para a tabela 'usuarios', redirecionar para a página de usuários
         header('Location: ../homePage/homePage.html');
         exit;
     } elseif (mysqli_num_rows($resultado_protetores) > 0) {
