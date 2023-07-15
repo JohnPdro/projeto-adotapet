@@ -246,6 +246,7 @@ function cadastrar() {
     setTimeout(() => {
       window.location.href = '../homePage/homePage.html';
     }, 3000);
+    
   } else {
     msgError.setAttribute('style', 'display: block');
     msgError.innerHTML = '<strong>Preencha Todos os Campos!</strong>';
