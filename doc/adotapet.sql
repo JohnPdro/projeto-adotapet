@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Jul-2023 às 02:45
+-- Tempo de geração: 15-Jul-2023 às 02:43
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `ongs` (
   `nome` varchar(100) NOT NULL,
   `telefone` varchar(50) NOT NULL,
   `email` varchar(150) NOT NULL,
-  `cnpj_cpf` varchar(50) NOT NULL,
+  `cnpj` varchar(50) NOT NULL,
   `foto` varchar(1000) DEFAULT NULL,
   `endereco` varchar(250) NOT NULL,
   `bairro` varchar(150) NOT NULL,
@@ -64,7 +64,14 @@ CREATE TABLE IF NOT EXISTS `ongs` (
   `estado` varchar(2) NOT NULL,
   `senha` varchar(150) NOT NULL,
   PRIMARY KEY (`id_ong`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Extraindo dados da tabela `ongs`
+--
+
+INSERT INTO `ongs` (`id_ong`, `nome`, `telefone`, `email`, `cnpj`, `foto`, `endereco`, `bairro`, `cidade`, `estado`, `senha`) VALUES
+(1, 'Adotapet', '19923456780', 'adotapet@outlook.com', '123.456.789-01', NULL, 'rua teste login 1, n° 1', 'jardim teste login 1', 'americana', 'sp', '12345678');
 
 -- --------------------------------------------------------
 

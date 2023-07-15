@@ -215,7 +215,7 @@ function cadastrar() {
   let bairro = document.querySelector('#bairro');
   let cidade = document.querySelector('#cidade');
   let estado = document.querySelector('#estado');
-  let cnpj_cpf = document.querySelector('#cnpj_cpf');
+  let cnpj_cpf = document.querySelector('#cnpj');
 
   let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
 
@@ -227,7 +227,7 @@ function cadastrar() {
     bairroCad: bairro.value,
     cidadeCad: cidade.value,
     estadoCad: estado.value,
-    cnpj_cpfCad: cnpj_cpf.value,
+    cnpj_cpfCad: cnpj.value,
     senhaCad: senha.value
   });
 
