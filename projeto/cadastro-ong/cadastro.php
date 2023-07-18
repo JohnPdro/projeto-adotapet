@@ -8,9 +8,9 @@ $endereco = $_POST["endereco"];
 $bairro = $_POST["bairro"];
 $cidade = $_POST["cidade"];
 $estado = $_POST["estado"];
-$cnpj_cpf = $_POST["cnpj_cpf"];
-$senha = $_POST["senha"];
-$sql = "insert into ongs(nome, telefone, email, endereco, bairro, cidade, estado, cnpj_cpf, senha) values('$nome', '$telefone', '$email', '$endereco', '$bairro', '$cidade', '$estado', '$cnpj_cpf', '$senha')";
+$cnpj = $_POST["cnpj"];
+$senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
+$sql = "insert into ongs(nome, telefone, email, endereco, bairro, cidade, estado, cnpj, senha) values('$nome', '$telefone', '$email', '$endereco', '$bairro', '$cidade', '$estado', '$cnpj', '$senha')";
 mysqli_query($conexao, $sql);
 mysqli_close($conexao);
 

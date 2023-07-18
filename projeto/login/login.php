@@ -6,38 +6,45 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     $senha = $conexao->real_escape_string($_POST['senha']);
 
     // Consulta na tabela 'ongs'
-    $sql_ongs = "SELECT * FROM ongs WHERE email = '$email' AND senha = '$senha'";
+    $sql_ongs = "SELECT * FROM ongs WHERE email = '$email'";
     $resultado_ongs = mysqli_query($conexao, $sql_ongs) or die("Falha na execução do código SQL: " . $conexao->error);
 
     // Consulta na tabela 'protetores'
-    $sql_protetores = "SELECT * FROM protetores WHERE email = '$email' AND senha = '$senha'";
+    $sql_protetores = "SELECT * FROM protetores WHERE email = '$email'";
     $resultado_protetores = mysqli_query($conexao, $sql_protetores) or die("Falha na execução do código SQL: " . $conexao->error);
 
     if (mysqli_num_rows($resultado_ongs) > 0) {
         $ongs = $resultado_ongs->fetch_assoc();
 
-        // Iniciar a sessão
-        if (!isset($_SESSION)) {
-            session_start();
-        }
+        // Verificar se a senha fornecida corresponde ao hash armazenado no banco de dados
+        if (password_verify($senha, $ongs['senha'])) {
+            // Iniciar a sessão
+            if (!isset($_SESSION)) {
+                session_start();
+            }
 
-        // Redirecionar para a página de destino
-        header('Location: ../../projeto/homePage/homePage.html');
-        exit();
-    } elseif (mysqli_num_rows($resultado_protetores) > 0) {
+            // Redirecionar para a página de destino
+            header('Location: ../../projeto/homePage/homePage.html');
+            exit();
+        }
+    } else if (mysqli_num_rows($resultado_protetores) > 0) {
         $protetores = $resultado_protetores->fetch_assoc();
 
-        // Iniciar a sessão
-        if (!isset($_SESSION)) {
-            session_start();
-        }
+        // Verificar se a senha fornecida corresponde ao hash armazenado no banco de dados
+        if (password_verify($senha, $protetores['senha'])) {
+            // Iniciar a sessão
+            if (!isset($_SESSION)) {
+                session_start();
+            }
 
-        // Redirecionar para a página de destino
-        header('Location: ../../projeto/homePage/homePage.html');
-        exit();
-    } else {
-        echo "Falha ao logar! Email ou senha inválidos";
+            // Redirecionar para a página de destino
+            header('Location: ../../projeto/homePage/homePage.html');
+            exit();
+        }
     }
+
+    // Se chegou até aqui, significa que o login falhou
+    echo "Falha ao logar! Email ou senha inválidos";
 }
 ?>
 
@@ -55,7 +62,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
 <body>
     <main id="container">
         <form id="login_form" method="post">
-            
+
             <!-- Form Header -->
             <div id="form_header">
                 <h1>Login</h1>

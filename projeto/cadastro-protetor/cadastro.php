@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "../includes/conexao.php";
 
 $nome = $_POST["nome"];
@@ -10,8 +10,9 @@ $bairro = $_POST["bairro"];
 $cidade = $_POST["cidade"];
 $estado = $_POST["estado"];
 $cpf = $_POST["cpf"];
-$senha = $_POST["senha"];
-$sql = "insert into protetores(nome, email, telefone, data_nascimento, endereco, bairro, cidade, estado, cpf, senha) values('$nome', '$email', '$telefone', '$data_nascimento', '$endereco', '$bairro', '$cidade', '$estado', '$cpf', '$senha')";
+$senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
+
+$sql = "INSERT INTO protetores (nome, email, telefone, data_nascimento, endereco, bairro, cidade, estado, cpf, senha) VALUES ('$nome', '$email', '$telefone', '$data_nascimento', '$endereco', '$bairro', '$cidade', '$estado', '$cpf', '$senha')";
 mysqli_query($conexao, $sql);
 mysqli_close($conexao);
 
